@@ -1,0 +1,36 @@
+/* Structure */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: skyblue;
+}
+
+div {
+  background: white;
+  width: 70%;
+  margin: auto; /* centering */
+  padding: 5px;
+}
+
+/* Images */
+img {
+  border: 2px solid pink;
+  margin: auto;
+  /* dashed */
+}
+
+/* Typography */
+h1 {
+  color: magenta;
+}
+
+h2 {
+  color: orange;
+}
+
+strong {
+  background: yellow;
+  padding: 5px;
+  text-decoration: underline;
+}
+
+/* Larger Resolutions */
