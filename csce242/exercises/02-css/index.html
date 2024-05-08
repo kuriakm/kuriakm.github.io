@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-    <title>Kangaroos</title>
-    <!-- 
+
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Kangaroos</title>
+  <!-- 
         Document Name
         Author: Marshall Kuriakose
     -->
-  </head>
+</head>
 
-  <body>
-    <div>
+<body>
+  <div id="content">
+    <header id="main-header">
       <h1>I &hearts; Kangaroos</h1>
       <h2>All About Kangaroos</h2>
+
+      <!-- Navigation: built in block element 
+    Home | About | Pictures | Contact Us
+    -->
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="pictures.html">Pictures</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main-content">
       <p>
         Lorem ipsum dolor sit <strong>amet</strong>, consectetur adipiscing
         elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -43,6 +59,10 @@
         aliquam ultrices sagittis orci a scelerisque purus semper. Et molestie
         ac feugiat sed lectus vestibulum.
       </p>
-    </div>
-  </body>
+    </main>
+    <footer id="main-footer">
+      <p>&copy kuriakm</p>
+    </footer>
+</body>
+
 </html>

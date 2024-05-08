@@ -1,34 +1,102 @@
 /* Structure */
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: skyblue;
+:root {
+  --primary-color: #6eb2dc;
+  --secondary-color: #f66d6d;
+  --background-color: #2379af;
 }
 
-div {
-  background: white;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background: #f5e6d9; */
+  background: url('images/aus-bkg.jpg');
+  background-size: 110%;
+}
+
+#content {
+  background:
+    /* color name, hexcode, rgb, rgba (transparency 0 - 1.0) */
+    rgba(255, 255, 255, 0.8);
   width: 70%;
-  margin: auto; /* centering */
+  /* centering */
+  margin: auto;
+  /* Round corners */
+  border-radius: 5px 50px 50px 0px;
+  /*   padding: 10px 20px; */
+  /*  10px 20px; */
+  /*   box-shadow:
+    // right
+    10px
+    // bottom
+    10px #da2929; */
+}
+
+#main-header,
+#main-footer {
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+#main-content {
+  padding: 10px;
+}
+
+
+/* Navigation */
+#main-nav ul {
+  padding-left: 0;
+}
+
+#main-nav li {
+  list-style-type: none;
+  background-color: var(--primary-color);
+  display: inline-block;
   padding: 5px;
+  border-radius: 2px;
+}
+
+#main-nav a {
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+#main-nav a:hover {
+  color: #3ba0df;
+}
+
+/* Tables */
+#about-table {
+  border-collapse: collapse;
+}
+
+#about-table th,
+#about-table td {
+  border: 1px solid var(--secondary-color);
+  padding: 5px;
+}
+
+#about-table th {
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 /* Images */
 img {
-  border: 2px solid pink;
+  border: 2px solid #10730d;
   margin: auto;
   /* dashed */
 }
 
 /* Typography */
 h1 {
-  color: magenta;
+  color: #3edfcf;
 }
 
 h2 {
-  color: orange;
+  color: #0dcc07;
 }
 
 strong {
-  background: yellow;
+  background: #f9f189;
   padding: 5px;
   text-decoration: underline;
 }
