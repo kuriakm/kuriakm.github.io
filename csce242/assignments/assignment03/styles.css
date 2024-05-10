@@ -16,13 +16,13 @@ body {
 
 #content {
     margin: 0 auto 0 auto;
-    border: 1.5px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
 }
 
 #main-header {
-    border-top: 1.5px solid var(--secondary-color);
-    border-left: 1.5px solid var(--secondary-color);
-    border-right: 1.5px solid var(--secondary-color);
+    border-top: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
     position: relative;
 }
 
@@ -31,14 +31,14 @@ body {
 }
 
 #main-content {
-    border-right: 1.5px solid var(--secondary-color);
-    border-left: 1.5px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
     position: relative;
 }
 
 #main-sidebar {
     border-top: 1px solid var(--secondary-color);
-    border-right: 1.5px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
     border-bottom: 1px solid var(--secondary-color);
     background: var(--primary-color);
     padding-left: 5%;
@@ -66,7 +66,7 @@ body {
 #big-ideas {
     position: relative;
     padding: 20px 50px 20px 50px;
-    border: 1.5px solid var(--secondary-color);
+    border: 1 solid var(--secondary-color);
 }
 
 #big-ideas section {
@@ -82,7 +82,7 @@ body {
 
 #main-nav li {
     background-color: var(--primary-color);
-    border: 1.5px solid var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     padding: 5px;
 }
 
