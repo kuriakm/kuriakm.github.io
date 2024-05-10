@@ -62,15 +62,13 @@ body {
 }
 
 #big-ideas {
-    padding: 20px 150px 20px 150px;
     position: relative;
+    padding: 20px 50px 20px 50px;
 }
 
 #big-ideas section {
     padding: 10px 10px 0px 10px;
 }
-
-#main-footer {}
 
 /* Navigation */
 
@@ -103,10 +101,7 @@ body {
 
 }
 
-/* Tables */
-
 /* Images */
-
 #big-ideas img {
     display: block;
     margin: auto;
@@ -138,16 +133,14 @@ h1 {
 #big-ideas h3,
 #big-ideas p {
     color: var(--text-color);
+    position: relative;
 }
 
-#big-ideas h2 {
-    padding-left: 20px;
-}
 
-/* #big-ideas p {
+#big-ideas p {
     display: inline-block;
 }
- */
+
 #main-sidebar h3 {
     color: white;
 }
@@ -182,8 +175,16 @@ h1 {
         padding: 1% 16% 15% 1%;
     }
 
+    #big-ideas {
+        padding: 20px 150px 20px 150px;
+    }
+
     #big-ideas section {
         display: flex;
+    }
+
+    #big-ideas h2 {
+        padding-left: 20px;
     }
 
     .one {
