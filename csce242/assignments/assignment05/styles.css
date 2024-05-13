@@ -15,8 +15,6 @@ body {
 
 }
 
-#content {}
-
 #main-header {
     background-color: var(--secondary-color);
     width: 1170px;
@@ -50,6 +48,10 @@ body {
     border-bottom: 1px solid var(--table-color);
 }
 
+#section1 {
+    padding-right: 50px;
+}
+
 #more-content {
     padding-top: 10px;
 }
@@ -64,22 +66,43 @@ body {
     transition: background-color .3s, box-shadow .3s .01s, color .3s .01s;
 }
 
+#hallmarks a {
+    text-decoration: underline;
+}
+
 #hallmarks ul,
 #uofsc-hallmarks ul {
     padding-top: 5px;
     padding-left: 40px;
 }
 
-#hallmarks a {
-    text-decoration: underline;
+#uofsc-hallmarks {
+    padding-bottom: 80px;
+}
+
+#section2 {
+    margin-top: 20px;
+    padding-right: 45px;
 }
 
 #footer-divider {
     background-color: var(--hover-color);
-    margin-bottom: 25px;
 }
 
-#main-footer {}
+#footer-info {
+    background-color: var(--primary-color);
+}
+
+#main-footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: max-content;
+}
+
+#info-nav {
+    width: 1170px;
+}
+
 
 /* Navigation */
 #gateway-nav {
@@ -101,8 +124,6 @@ body {
     text-decoration: none;
 }
 
-#main-sidebar {}
-
 #sidebar-nav ul {
     padding-left: 0;
     margin-top: 0;
@@ -111,7 +132,6 @@ body {
 
 #sidebar-nav li {
     list-style-type: none;
-    /* border-left: 1px solid var(--table-color); */
     border-bottom: 1px solid var(--table-color);
     padding: 10px;
 }
@@ -143,12 +163,54 @@ body {
     padding: 15px 30px 15px 5px;
 }
 
-/* Callouts */
-#vision-callouts {
-    display: inline-block;
+#footer-nav {
+    position: relative;
 }
 
-/* Tables */
+#footer-nav ul {
+    list-style-type: none;
+    margin-right: 0;
+}
+
+#footer-nav li {
+    padding: 10px;
+    display: inline;
+}
+
+#college-schools,
+#offices-divisions,
+#tools {
+    margin-right: 50px;
+    width: 500px;
+}
+
+#college-schools ul,
+#offices-divisions ul,
+#tools ul {
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+
+#college-schools li,
+#offices-division li,
+#tools li {
+    padding-right: 30px;
+}
+
+/* Callouts */
+#right-sidebar {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 100%;
+    padding: 20px;
+    display: block;
+    border-left: 5px solid var(--primary-color);
+    border-right: 1px solid var(--table-color);
+    border-top: 1px solid var(--table-color);
+    border-bottom: 1px solid var(--table-color);
+}
 
 /* Images */
 #header-content img {
@@ -160,9 +222,11 @@ body {
     max-width: 100%;
 }
 
-/* Typography */
+#main-footer img {
+    padding-top: 20px;
+}
 
-h1 {}
+/* Typography */
 
 h2 {
     font-family: 'Times New Roman', Times, serif;
@@ -216,7 +280,7 @@ p {
 #school-content li {
     font-size: 1em;
     line-height: 1.8em;
-    /*     padding-bottom: 5px; */
+    padding-bottom: 5px;
 }
 
 #school-content p,
@@ -239,8 +303,36 @@ p {
     font-weight: 800;
 }
 
+#right-sidebar h3 {
+    margin-top: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 #footer-divider h2 {
     color: var(--secondary-color)
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 15px;
+}
+
+#main-footer h4,
+#info-nav li {
+    color: var(--header-color);
+}
+
+#main-footer h4 {
+    border-bottom: 1px solid var(--header-color);
+}
+
+#info-nav li {
+    font-size: .75em;
+    line-height: 1.3em;
+    list-style: none;
+    padding-left: 0;
+    color: var(--header-color)
 }
 
 /* Larger Resolutions */
@@ -272,13 +364,20 @@ p {
         padding-left: 190px;
     }
 
-    #header-content h2,
-    #footer-divider h2 {
+    #header-content h2 {
         padding-left: 190px;
         font-weight: 700;
         font-size: 1.6em;
         padding-bottom: 5px;
         padding-top: 5px;
+    }
+
+    #footer-divider h2 {
+        padding-left: 190px;
+        font-weight: 700;
+        font-size: 1.6em;
+        margin-top: 2px;
+        margin-bottom: 2px;
     }
 
     #gateway-nav {
@@ -302,6 +401,16 @@ p {
     #school-content {
         padding-left: 35px;
         padding-right: 240px;
+    }
+
+    #footer-nav {
+        position: absolute;
+        padding-left: 835px;
+    }
+
+    #main-footer {
+        padding-left: 190px;
+        padding-right: 250px;
     }
 
 }
