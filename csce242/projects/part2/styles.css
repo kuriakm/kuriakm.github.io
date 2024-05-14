@@ -1,0 +1,30 @@
+/* Structure */
+:root {
+    --primary-color: #84d9f5;
+    --secondary-color: #0e5acc;
+    --tertiary-color: #2472e7;
+    --background-color: #c9edeb;
+    --box-color: #bdeeff;
+    --box-shadow: #55b1cf;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Source Code Pro Regular', sans-serif;
+    background-color: var(--background-color);
+}
+
+#page {
+    background: #ffffff;
+    border: 1.5px solid var(--box-shadow);
+    width: 95%;
+    margin: 0 auto 0 auto;
+    border-radius: 40px 40px 40px 40px;
+    padding: 20px 20px 20px 20px;
+}
+
+iframe {
+    margin: auto;
+    display: block;
+    text-align: center;
+    position: relative;
+}

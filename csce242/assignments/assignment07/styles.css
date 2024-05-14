@@ -1,0 +1,28 @@
+/* Structure */
+:root {
+    --primary-color: #4851bb;
+    --secondary-color: #fff7af;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Source Code Pro Regular', sans-serif;
+    background: var(--secondary-color);
+}
+
+#content {}
+
+#main-content {}
+
+#main-footer {}
+
+/* Images */
+
+/* Typography */
+
+h1 {}
+
+h2 {}
+
+p {}
+
+/* Larger Resolutions */
