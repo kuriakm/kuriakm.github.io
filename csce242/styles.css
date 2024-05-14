@@ -64,8 +64,8 @@ body {
     padding-bottom: 10px;
     text-align: center;
     position: relative;
-    margin: auto;
-    border-collapse: collapse;
+    margin: 10px;
+    max-width: 100%;
 }
 
 /* Tables */
@@ -138,6 +138,7 @@ p {
     }
 
     img {
-        max-width: 95%;
+        width: 300px;
+        height: 150px;
     }
 }

@@ -43,6 +43,18 @@ body {
 }
 
 /* Images */
+#rand-section img {
+    max-width: 100%;
+}
+
+#slide-box {
+    max-width: 50%;
+}
+
+/* Slider */
+#slider {
+    max-width: 50%;
+}
 
 /* Typography */
 
