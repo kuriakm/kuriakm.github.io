@@ -20,7 +20,21 @@
     <main id="main-content" class="columns">
         <section id="javascript-col" class="three">
             <div class="columns wrap">
-                <section>
+                <section id="counter">
+                    <h3>Count</h3>
+                    <h4 id="clicker">0</h4>
+                </section>
+                <section id="rand-section">
+                    <h3>Random Image</h3>
+                    <img src="https://picsum.photos/200" id="rand-pic">
+                </section>
+                <section id="slide-section">
+                    <h3>Slider Move</h3>
+                    <input type="range" min="1" max="100" value="5" class="slider" id="slider">
+                    <p id="slide-val"></p>
+                    <section id="box-section">
+                        <img src="https://place-hold.it/200/0c1793/ffffff" id="slide-box">
+                    </section>
                 </section>
             </div>
         </section>
@@ -28,6 +42,8 @@
     <footer id="main-footer">
         <p>&copy kuriakm</p>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
