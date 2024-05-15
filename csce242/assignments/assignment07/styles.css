@@ -30,11 +30,21 @@ body {
     border: 2px solid var(--header-color);
 }
 
+#counter section {
+    border: none;
+    background: none;
+    font-size: larger;
+}
+
+#slide-section {
+    position: relative;
+}
+
 #slide-section section {
     border: none;
     background: none;
     text-align: left;
-    position: relative;
+    object-fit: contain;
 }
 
 
@@ -48,6 +58,8 @@ body {
 }
 
 #slide-box {
+    position: relative;
+    text-align: left;
     max-width: 50%;
 }
 

@@ -19,5 +19,5 @@ document.getElementById("slider").value = 0; // Initial value of slider
 document.getElementById("slider").oninput = () => {
     console.log("Check"); // Check input function
     val = document.getElementById("slider").value * 1.25;
-    document.getElementById("box-section").style.left = val + "px";
+    document.getElementById("slide-box").style.left = val + "px";
 }
