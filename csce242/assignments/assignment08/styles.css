@@ -1,0 +1,164 @@
+/* Structure */
+:root {
+    --primary-color: #4851bb;
+    --secondary-color: #fff7af;
+    --nav-color: #fbed6e;
+    --border-color: #0c1793;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, 'Source Code Pro Regular', sans-serif;
+    background: var(--secondary-color);
+}
+
+/* #content {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+} */
+
+#main-header {
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid var(--border-color);
+}
+
+#main-content section {
+    background: var(--primary-color);
+    padding: 10px;
+    text-align: center;
+    position: static;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--border-color);
+}
+
+#main-footer {}
+
+/* Toggle */
+/* Toggle Button */
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-bottom: 15px solid var(--border-color);
+}
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+    border-top: 15px solid var(--border-color);
+}
+
+/* Exercise 1 Color Slider */
+#color-box,
+#pic-box {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#slider {
+    accent-color: var(--border-color)
+}
+
+/* Exercise 2 Picture Chooser*/
+#pic-chosen {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 100%;
+}
+
+/* Hide / Show */
+#toggle {
+    display: block;
+}
+
+.hide-small {
+    display: none;
+}
+
+.hide-col {
+    display: none;
+}
+
+/* Navigation */
+
+#main-nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    padding: 5px;
+    margin: 5px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--nav-color);
+    display: block;
+}
+
+#main-nav a:hover {
+    color: var(--border-color);
+}
+
+/* Typography */
+h1,
+h2,
+#ex1 p {
+    color: var(--nav-color);
+    text-align: center;
+}
+
+p {
+    color: var(--border-color);
+    text-align: center;
+}
+
+/* Media Query */
+/* For larger devices e.g. labtops */
+@media only screen and (min-width: 600px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .hide-small {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .hide-col {
+        display: none;
+    }
+
+    #main-nav li:first-child {
+        border-right: 1px solid var(--border-color);
+        padding-right: 15px;
+        text-align: right;
+    }
+}

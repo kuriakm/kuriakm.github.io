@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Conditionals</title>
+    <!-- 
+        CSCE 242 Assignment 8
+        Author: Marshall Kuriakose
+    -->
+</head>
+
+<body>
+    <div id="content">
+        <header id="main-header">
+            <h1>Assignment 8</h1>
+            <h2>If Statements</h2>
+            <nav id="main-nav">
+                <div id="toggle" class="triangle-down">
+                </div>
+                <ul id="nav-ul" class="columns hide-small">
+                    <li id="ex1-link"><a href="#">Exercise 1</a></li>
+                    <li id="ex2-link"><a href="#">Exercise 2</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content" class="columns">
+            <section id="ex1" class="columns hide-col one">
+                <div id="color-box">
+                    <h2>Color Slider</h2>
+                    <input type="range" min="0" max="255" value="5" class="slider" id="slider">
+                    <p id="color-message"></p>
+                </div>
+            </section>
+            <section id="ex2" class="columns hide-col one">
+                <div id="pic-box">
+                    <div id="button-box" class="three">
+                        <button id="btn-small">Small</button>
+                        <button id="btn-med">Medium</button>
+                        <button id="btn-large">Large</button>
+                    </div>
+                    <img id="pic-chosen" class="one" src="https://picsum.photos/200">
+                </div>
+            </section>
+        </main>
+        <footer id="main-footer">
+            <p>&copy kuriakm</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
