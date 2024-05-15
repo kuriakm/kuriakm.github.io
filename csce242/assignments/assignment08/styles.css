@@ -12,12 +12,13 @@ body {
     background: var(--secondary-color);
 }
 
-/* #content {
+#content {
     background: var(--secondary-color);
+    width: 90%;
     border-radius: 10px;
     margin: auto;
     padding: 10px;
-} */
+}
 
 #main-header {
     background: var(--primary-color);
