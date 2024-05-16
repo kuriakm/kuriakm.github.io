@@ -30,7 +30,7 @@ document.getElementById("btn-star").onclick = () => {
 
     // For-loop to set top and left positions for each star
     for (let i = 0; i < num; i++) {
-        let top = randNum(90);
+        let top = randNum(95);
         let left = randNum(95);
         console.log(top);
         console.log(left);
