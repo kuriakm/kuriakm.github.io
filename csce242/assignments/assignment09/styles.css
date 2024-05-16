@@ -1,0 +1,109 @@
+/* Structure */
+:root {
+    --primary-color: #090446;
+    --secondary-color: #EE4266;
+    --tertiary-color: #FFD23F;
+    --quaternary-color: #F3FCF0;
+    --quinary-color: #1F271B;
+    --background-color: #4d43c0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
+    background: var(--background-color);
+}
+
+#main-header,
+#main-content {
+    margin: 20px;
+    padding: 20px;
+    background: var(--quaternary-color);
+    border: 2px solid var(--primary-color);
+}
+
+#main-content {
+    margin-top: 40px;
+}
+
+#outer-box {
+    border: 2px solid var(--primary-color);
+    padding: 20px 20px 20px 20px;
+    background: var(--secondary-color);
+    position: relative;
+}
+
+#star-box {
+    padding: 100px 100px 600px 100px;
+    border: 2px solid var(--quaternary-color);
+    position: relative;
+    background: var(--quinary-color);
+    margin: 0 auto;
+}
+
+#main-footer {
+    text-align: center;
+}
+
+/* Star Shape */
+.star {
+    width: 20px;
+    aspect-ratio: 1;
+    background: var(--tertiary-color);
+    clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+    position: absolute;
+    color: transparent;
+}
+
+/* Typography */
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+/* Star Input Field */
+#star-label {
+    color: var(--tertiary-color);
+    font-weight: 700;
+}
+
+#star-num {
+    color: var(--tertiary-color);
+    font-weight: 1000;
+}
+
+#star-textbox {
+    padding: 5px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--quaternary-color);
+}
+
+.error {
+    color: red;
+    background: var(--quaternary-color);
+    margin-left: 5px;
+}
+
+/* Media Query */
+/* For larger devices e.g. labtops */
+@media only screen and (min-width: 900px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .one {
+        flex: 1;
+    }
+}

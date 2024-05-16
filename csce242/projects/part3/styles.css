@@ -8,6 +8,12 @@
     --box-color: #FFFFFF;
     --background-color: #ffeda3;
     --text-color: #3C3C3C;
+
+    --primary-shade: #fed42c;
+    --secondary-shade: #EC2554;
+    --tertiary-shade: #39A8CD;
+    --quaternary-shade: #A4B716;
+    --quinary-shade: #676767;
 }
 
 /* Main styling */
@@ -36,16 +42,21 @@ body {
 #about-writer-box,
 #slideshow,
 #store-items,
-#about-page {
+#about-page,
+#contact-page,
+#blog-page {
     background: var(--box-color);
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
     padding: 5px;
     margin: 5px;
+    margin-bottom: 15px;
 }
 
 #slideshow,
-#about-page {
+#about-page,
+#contact-page,
+#blog-page {
     padding: 40px;
     padding-top: 20px;
     max-width: 100%;
@@ -54,9 +65,20 @@ body {
 #store-items {
     padding: 40px;
     max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    margin-top: 15px;
 }
 
-#slideshow {
+#store-items:last-child {
+    margin-bottom: 15px;
+}
+
+#slideshow,
+#posts {
     position: relative;
     color: var(--text-color);
 }
@@ -72,18 +94,33 @@ body {
     margin-top: 20px;
 }
 
-#store-items {
-    position: relative;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: block;
-    margin-top: 15px;
-}
 
 #about-writer-box div {
     padding: 15px;
     text-align: center;
+}
+
+#contact-page {
+    padding-right: 50px;
+}
+
+#contact-page label {
+    display: block;
+    overflow: hidden;
+}
+
+#txt-name,
+#txt-email,
+#txt-com,
+textarea {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+textarea {
+    padding-bottom: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
 }
 
 #main-footer {
@@ -120,22 +157,43 @@ body {
     background: var(--primary-color);
 }
 
+#main-nav #home:hover {
+    background: var(--primary-shade);
+}
+
 #main-nav #about {
     background: var(--quaternary-color);
+}
+
+#main-nav #about:hover {
+    background: var(--quaternary-shade);
 }
 
 #main-nav #blog {
     background: var(--tertiary-color);
 }
 
+#main-nav #blog:hover {
+    background: var(--tertiary-shade);
+}
+
 #main-nav #store {
     background: var(--secondary-color);
+}
+
+#main-nav #store:hover {
+    background: var(--secondary-shade);
 }
 
 #main-nav #contact {
     background: var(--quinary-color);
 }
 
+#main-nav #contact:hover {
+    background: var(--quinary-shade);
+}
+
+/* Buttons/Interactives */
 /* Toggle menu */
 #toggle-box {
     background: var(--box-color);
@@ -165,8 +223,12 @@ body {
     display: none;
 }
 
-/* Slideshow */
+button {
+    margin-left: 45%;
+}
 
+/* Slideshow */
+/* Add slideshow code here */
 
 /* Tables */
 
@@ -184,14 +246,10 @@ body {
 
 
 #slideshow img,
-#about-page img {
+#about-page img,
+#posts img {
     max-width: 100%;
 }
-
-/* 
-#logo img {
-    padding: 10px;
-} */
 
 /* Typography */
 h1 {
@@ -209,13 +267,14 @@ h3 {
     color: var(--text-color);
 }
 
-p {
+p,
+label {
     color: var(--text-color);
 }
 
 /* Media Query */
 /* For larger devices e.g. labtops */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 900px) {
 
     .columns {
         display: flex;
@@ -269,6 +328,18 @@ p {
         left: 50px;
         font-size: large;
         margin-right: 100px;
+    }
+
+    #post-text {
+        font-size: large;
+        bottom: 45px;
+        left: 50px;
+        font-size: large;
+        margin-right: 100px;
+    }
+
+    button {
+        margin-left: 50%;
     }
 
     .hide-small {
