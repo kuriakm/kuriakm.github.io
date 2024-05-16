@@ -22,9 +22,15 @@ document.getElementById("btn-star").onclick = () => {
     const num = document.getElementById("txt-star").value;
     let stage = document.getElementById("star-box");
 
-    // Validate input
+    // Clear error message and star number message if present
+    document.getElementById("error-star").classList.remove("error");
+    document.getElementById("error-star").innerHTML = "";
     document.getElementById("star-box").innerHTML = "";
+    document.getElementById("star-num").innerHTML = "";
+
+    // Validate input
     if (!validNum(num, "error-star")) {
+        document.getElementById("error-star").classList.add("error");
         return;
     }
 
