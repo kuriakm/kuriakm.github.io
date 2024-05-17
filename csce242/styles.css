@@ -1,11 +1,14 @@
 /* Structure */
 :root {
-    --primary-color: #84d9f5;
-    --secondary-color: #0e5acc;
-    --tertiary-color: #2472e7;
-    --background-color: #c9edeb;
-    --box-color: #bdeeff;
-    --box-shadow: #55b1cf;
+    --primary-color: #090446;
+    --secondary-color: #EE4266;
+    --tertiary-color: #FFD23F;
+    --quaternary-color: #F3FCF0;
+    --quinary-color: #1F271B;
+    --background-color: #4d43c0;
+
+    --primary-highlight: #1D10A2;
+    --secondary-highlight: #FF567B;
 }
 
 body {
@@ -14,85 +17,129 @@ body {
 }
 
 #page {
-    background: #ffffff;
-    border: 1.5px solid var(--box-shadow);
-    width: 95%;
-    margin: 0 auto 0 auto;
-    border-radius: 40px 40px 40px 40px;
-    padding: 20px 20px 20px 20px;
+    background: var(--quaternary-color);
+    border: 1.5px solid var(--quinary-color);
+    box-shadow: -3.5px 3.5px var(--quinary-color);
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #main-header {
-    background: var(--primary-color);
-    box-shadow: -5px 5px var(--box-shadow);
-    text-align: center;
-    border-radius: 40px 40px 40px 40px;
+    background: var(--tertiary-color);
+    box-shadow: -5px 5px var(--quinary-color);
     position: relative;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin: 15px;
+    padding: 5px;
 }
 
+#main-content {
+    background: var(--secondary-color);
+    box-shadow: -5px 5px var(--quinary-color);
+    position: relative;
+    margin: 15px;
+    margin-top: 30px;
+}
 
 #main-footer {
     margin-top: 35px;
     text-align: center;
 }
 
-#main-content {
-    background: var(--primary-color);
-    box-shadow: -5px 5px var(--box-shadow);
-    position: relative;
-    border-radius: 40px 40px 40px 40px;
-}
-
 /* Navigation */
+#main-nav ul {
+    padding-left: 0;
+    list-style-type: none;
+}
 
-#assignments a {
-    color: var(--secondary-color);
+#main-nav li {
+    background: var(--secondary-color);
+    box-shadow: -5px 5px var(--quinary-color);
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+}
+
+#main-nav a {
     text-decoration: none;
+    text-align: center;
+    color: var(--quinary-color);
     display: block;
 }
 
-#assignments {
-    padding: 10px 30px 30px 30px
+#main-nav li:hover,
+#main-nav a:hover {
+    color: var(--quaternary-color);
+    background: var(--secondary-highlight);
 }
 
-#assignments section {
+/* Assignment/Project sections*/
+#assignments,
+#project {
+    padding: 30px 30px 30px 30px;
+    margin: 0 auto;
+}
+
+#assignments section,
+#project section {
     display: block;
-    background: var(--box-color);
-    box-shadow: -5px 5px var(--box-shadow);
-    padding-bottom: 10px;
+    background: var(--primary-color);
+    box-shadow: -5px 5px var(--quinary-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
     position: relative;
     margin: 10px;
     max-width: 100%;
+    text-decoration: none;
 }
 
-/* Tables */
-#main-table {
-    border-collapse: collapse;
-    margin: auto;
+#section-block a {
+    text-decoration: none;
 }
 
-#main-table th,
-td {
-    border: 1.5px solid #02409f;
+#section-block:hover {
+    background: var(--primary-highlight);
+}
+
+/* Hide / Show */
+#toggle {
+    display: block;
+}
+
+#toggle-box {
+    background: var(--quaternary-color);
+    border: 1.5px solid var(--quinary-color);
+    box-shadow: -2.5px 2.5px var(--quinary-color);
     padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 25px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 5px;
 }
 
-#main-table th {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+#toggle div {
+    width: 25px;
+    height: 2px;
+    background: var(--quinary-color);
+    margin: 6px 0;
+    margin-left: auto;
+    margin-right: 0;
 }
 
-#main-table td {
-    color: #1e232d;
-    background-color: #d1f4ff;
+.hide-small {
+    display: none;
+}
+
+.hide-col {
+    display: none;
 }
 
 /* Images */
-#assignments img {
-    border: 1px solid var(--secondary-color);
+#assignments img,
+#project img {
     display: block;
     margin: auto;
     max-width: 100%;
@@ -100,19 +147,29 @@ td {
     position: relative;
     width: 300px;
     height: 150px;
+
 }
 
 /* Typography */
 h1,
 h2,
-h3 {
+h3,
+p {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--quinary-color);
 }
 
 p {
-    color: #1e232d;
     padding: 10px;
+    font-weight: 500;
+}
+
+#section-title {
+    color: var(--quaternary-color);
+}
+
+#section-block p {
+    color: var(--quaternary-color);
 }
 
 /* Media Query */
@@ -130,8 +187,17 @@ p {
         flex: 1;
     }
 
-    #assignments section {
+    #assignments section,
+    #project section {
         flex: 30%;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
     }
 
     .three {
@@ -142,4 +208,18 @@ p {
         width: 300px;
         height: 150px;
     }
+
+    #toggle-box,
+    #toggle {
+        display: none;
+    }
+
+    .hide-small {
+        display: flex;
+    }
+
+    .hide-col {
+        display: none;
+    }
+
 }
