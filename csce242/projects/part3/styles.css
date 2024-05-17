@@ -41,6 +41,7 @@ body {
     margin-left: 5px;
 }
 
+/* Main Page/Transferrable Designs */
 #information {
     margin: 0 auto;
 }
@@ -50,7 +51,8 @@ body {
 #store-items,
 #about-page,
 #contact-page,
-#blog-page {
+#blog-page,
+#storepage-items {
     background: var(--box-color);
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
@@ -89,6 +91,24 @@ body {
     color: var(--text-color);
 }
 
+#posts {
+    height: auto;
+    overflow: auto;
+    padding-bottom: 30px;
+    width: 100%;
+}
+
+#posts section {
+    margin-bottom: 20px;
+}
+
+#posts a,
+#store-items a,
+#slideshow a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
 .bottom-left {
     bottom: 45px;
     left: 50px;
@@ -106,6 +126,7 @@ body {
     text-align: center;
 }
 
+/* Contact */
 #contact-page {
     padding-right: 50px;
 }
@@ -129,6 +150,37 @@ textarea {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
 }
 
+/* Store */
+#storepage-items {
+    padding: 40px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: block;
+    margin-top: 15px;
+}
+
+#button-box {
+    text-align: center;
+    position: relative;
+}
+
+#button-box button {
+    text-align: center;
+    margin: 10px;
+}
+
+#sort-menu {
+    display: inline-flex;
+    font-size: small;
+    border: 1px solid var(--text-color);
+    padding: 5px;
+    margin: 10px;
+}
+
+/* Footer */
 #main-footer {
     padding-top: 15px;
     text-align: center;
@@ -228,17 +280,16 @@ textarea {
     display: none;
 }
 
-button {
+#btn-submit {
     margin-left: 45%;
 }
 
 /* Slideshow */
 /* Add slideshow code here */
 
-/* Tables */
-
 /* Images */
-#store-items img {
+#store-items img,
+#storepage-items img {
     position: relative;
     max-width: 100%;
 }
@@ -254,6 +305,10 @@ button {
 #about-page img,
 #posts img {
     max-width: 100%;
+}
+
+#posts {
+    height: 586.5px;
 }
 
 /* Typography */
@@ -275,6 +330,24 @@ h3 {
 p,
 label {
     color: var(--text-color);
+}
+
+#storepage-items p {
+    text-align: left;
+}
+
+#store-title {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    margin: 5px;
+    padding: 40px 40px 20px 40px;
+    max-width: 100%;
+}
+
+#store-title h2 {
+    margin: 0;
+    display: inline-block;
 }
 
 /* Media Query */
@@ -301,6 +374,10 @@ label {
         flex: 3
     }
 
+    .four {
+        flex: 4;
+    }
+
     #main-nav li {
         flex: 1;
     }
@@ -314,16 +391,19 @@ label {
         margin-right: 15px;
     }
 
-    #store-items {
+    #store-items,
+    #storepage-items {
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    #store-items:first-child {
+    #store-items:first-child,
+    #storepage-items:first-child {
         margin-left: 5px;
     }
 
-    #store-items:last-child {
+    #store-items:last-child,
+    #storepage-items:last-child {
         margin-right: 5px;
     }
 
@@ -343,7 +423,7 @@ label {
         margin-right: 100px;
     }
 
-    button {
+    #btn-submit {
         margin-left: 50%;
     }
 
