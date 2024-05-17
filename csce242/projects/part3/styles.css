@@ -37,8 +37,8 @@ body {
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
     padding: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* Main Page/Transferrable Designs */
@@ -51,20 +51,24 @@ body {
 #store-items,
 #about-page,
 #contact-page,
+#contact-social,
 #blog-page,
+#blog-post,
 #storepage-items {
     background: var(--box-color);
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
     margin-bottom: 15px;
 }
 
 #slideshow,
 #about-page,
 #contact-page,
-#blog-page {
+#contact-social,
+#blog-page,
+#blog-post {
     padding: 40px;
     padding-top: 20px;
     max-width: 100%;
@@ -75,8 +79,8 @@ body {
     max-width: 100%;
     position: relative;
     text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: block;
     margin-top: 15px;
 }
@@ -94,8 +98,22 @@ body {
 #posts {
     height: auto;
     overflow: auto;
-    padding-bottom: 30px;
     width: 100%;
+}
+
+#blog-page #posts section {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#blog-page #posts section:first-child {
+    margin-top: 0px;
+}
+
+#blog-page #posts section:last-child {
+    margin-bottom: 0px;
 }
 
 #posts section {
@@ -110,7 +128,7 @@ body {
 }
 
 .bottom-left {
-    bottom: 45px;
+    bottom: 50px;
     left: 50px;
     font-size: large;
     font-weight: 500;
@@ -122,8 +140,43 @@ body {
 
 
 #about-writer-box div {
-    padding: 15px;
+    padding: 20px;
     text-align: center;
+}
+
+
+/* Store */
+#storepage-items {
+    padding: 40px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    margin-top: 15px;
+}
+
+#button-box {
+    text-align: center;
+    position: relative;
+}
+
+#button-box button {
+    text-align: center;
+    margin: 10px;
+}
+
+#sort-menu {
+    display: inline-flex;
+    font-size: small;
+    border: 1px solid var(--text-color);
+    padding: 5px;
+    margin: 10px;
+}
+
+#btn-add {
+    margin-top: 10px;
 }
 
 /* Contact */
@@ -150,34 +203,20 @@ textarea {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
 }
 
-/* Store */
-#storepage-items {
-    padding: 40px;
-    max-width: 100%;
-    position: relative;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-    display: block;
-    margin-top: 15px;
+
+#btn-submit {
+    margin-left: 45%;
 }
 
-#button-box {
-    text-align: center;
-    position: relative;
+
+#contact-social {
+    margin-top: 20px;
 }
 
-#button-box button {
+#social-media {
+    margin: 0 auto;
+    margin-top: 20px;
     text-align: center;
-    margin: 10px;
-}
-
-#sort-menu {
-    display: inline-flex;
-    font-size: small;
-    border: 1px solid var(--text-color);
-    padding: 5px;
-    margin: 10px;
 }
 
 /* Footer */
@@ -197,7 +236,7 @@ textarea {
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
     padding: 5px;
-    margin: 5px;
+    margin: 10px;
 }
 
 #main-nav a {
@@ -263,7 +302,7 @@ textarea {
     width: 25px;
     height: 30px;
     margin-left: auto;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #toggle div {
@@ -278,10 +317,6 @@ textarea {
 /* Hide/Show */
 .hide-small {
     display: none;
-}
-
-#btn-submit {
-    margin-left: 45%;
 }
 
 /* Slideshow */
@@ -307,31 +342,32 @@ textarea {
     max-width: 100%;
 }
 
-#posts {
-    height: 586.5px;
+#social-media img {
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Typography */
-h1 {
-    display: inline;
-    text-align: left;
-    color: var(--text-color);
-}
-
-h2 {
-    color: var(--text-color);
-}
-
-h3 {
-    text-align: center;
-    color: var(--text-color);
-}
-
+/* Transferrable Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
 p,
 label {
     color: var(--text-color);
 }
 
+h1 {
+    display: inline;
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Store Typography */
 #storepage-items p {
     text-align: left;
 }
@@ -340,7 +376,7 @@ label {
     background: var(--box-color);
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
-    margin: 5px;
+    margin: 10px;
     padding: 40px 40px 20px 40px;
     max-width: 100%;
 }
@@ -397,22 +433,12 @@ label {
         margin-right: 10px;
     }
 
-    #store-items:first-child,
-    #storepage-items:first-child {
-        margin-left: 5px;
+    #store-items:first-child {
+        margin-left: 10px;
     }
 
-    #store-items:last-child,
-    #storepage-items:last-child {
-        margin-right: 5px;
-    }
-
-    .bottom-left {
-        position: absolute;
-        bottom: 45px;
-        left: 50px;
-        font-size: large;
-        margin-right: 100px;
+    #store-items:last-child {
+        margin-right: 10px;
     }
 
     #post-text {
@@ -423,11 +449,47 @@ label {
         margin-right: 100px;
     }
 
+    #blog-page #posts,
+    #contact-page {
+        overflow: auto;
+        overflow-y: scroll;
+    }
+
+    #posts {
+        height: 600.5px;
+    }
+
+    #storepage #posts {
+        height: 550px;
+        overflow: hidden;
+    }
+
+    #posts,
+    #contact-page {
+        overflow-y: scroll;
+    }
+
+    #about-page,
+    #blog-page #posts,
+    #blog-post #posts {
+        height: 1000px;
+
+    }
+
+    #social-media {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
     #btn-submit {
         margin-left: 50%;
     }
 
     .hide-small {
         display: flex;
+    }
+
+    #slideshow p {
+        padding-right: 5px;
     }
 }
