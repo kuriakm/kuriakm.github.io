@@ -5,9 +5,6 @@
     --tertiary-color: #89CBE1;
     --quaternary-color: #C3D350;
     --quinary-color: #999999;
-    --box-color: #FFFFFF;
-    --background-color: #ECD7C8;
-    --text-color: #3C3C3C;
 
     --primary-shade: #FED42C;
     --secondary-shade: #EC2554;
@@ -15,7 +12,9 @@
     --quaternary-shade: #A4B716;
     --quinary-shade: #676767;
 
-
+    --box-color: #FFFFFF;
+    --background-color: #ECD7C8;
+    --text-color: #3C3C3C;
 }
 
 /* Main styling */
@@ -95,6 +94,7 @@ body {
     color: var(--text-color);
 }
 
+/* Blog Page/Transferrable Designs */
 #posts {
     height: auto;
     overflow: auto;
@@ -176,7 +176,7 @@ body {
 }
 
 
-/* Store */
+/* Store/Store Item */
 #storepage-items {
     padding: 40px;
     max-width: 100%;
@@ -527,8 +527,6 @@ about-writer-box h3 {
     #store-item-page {
         height: 980px;
     }
-
-
 
     #review-box {
         height: 1000px;
