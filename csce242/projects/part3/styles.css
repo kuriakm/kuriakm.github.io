@@ -175,6 +175,11 @@ body {
     margin: 10px;
 }
 
+#storepage #posts {
+    overflow: auto;
+
+}
+
 #btn-add {
     margin-top: 10px;
 }
