@@ -6,10 +6,6 @@
     --quaternary-color: #C3D350;
     --quinary-color: #999999;
     --box-color: #FFFFFF;
-    /* --background-color: #FFEDA3; */
-    /* --background-color: #DDDADA; */
-    /*  --background-color: #A6DCF0;*/
-    /* --background-color: #F6C0CC; */
     --background-color: #ECD7C8;
     --text-color: #3C3C3C;
 
@@ -27,10 +23,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
     background: var(--background-color);
 }
-
-#content {}
-
-#main-content {}
 
 #logo {
     background: var(--box-color);
@@ -128,6 +120,36 @@ body {
     margin-bottom: 20px;
 }
 
+
+#button-box {
+    text-align: center;
+    position: relative;
+}
+
+#button-box button {
+    text-align: center;
+    margin: 10px;
+    padding: 10px
+}
+
+#blog-page #button-box {
+    text-align: right;
+}
+
+#blog-page button {
+    margin-top: 0;
+    padding: 10px;
+}
+
+#store-sort-menu,
+#blog-sort-menu {
+    display: inline-flex;
+    font-size: small;
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    margin: 10px;
+}
+
 #posts a,
 #store-items a,
 #slideshow a {
@@ -153,14 +175,6 @@ body {
     text-align: center;
 }
 
-#reviews {
-    text-align: left;
-}
-
-#reviews-head {
-    display: inline;
-}
-
 
 /* Store */
 #storepage-items {
@@ -174,23 +188,6 @@ body {
     margin-top: 15px;
 }
 
-#button-box {
-    text-align: center;
-    position: relative;
-}
-
-#button-box button {
-    text-align: center;
-    margin: 10px;
-}
-
-#sort-menu {
-    display: inline-flex;
-    font-size: small;
-    border: 1px solid var(--text-color);
-    padding: 5px;
-    margin: 10px;
-}
 
 #storepage #posts {
     overflow: auto;
@@ -199,6 +196,14 @@ body {
 
 #btn-add {
     margin-top: 10px;
+}
+
+#reviews {
+    text-align: left;
+}
+
+#reviews-head {
+    display: inline;
 }
 
 /* Contact */
@@ -410,9 +415,11 @@ about-writer-box h3 {
     margin: 10px;
     padding: 40px 40px 20px 40px;
     max-width: 100%;
+    text-align: center;
 }
 
-#store-title h2 {
+#store-title h1 {
+    padding-bottom: 10px;
     margin: 0;
     display: inline-block;
 }
