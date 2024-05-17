@@ -6,14 +6,20 @@
     --quaternary-color: #C3D350;
     --quinary-color: #999999;
     --box-color: #FFFFFF;
-    --background-color: #ffeda3;
+    /* --background-color: #FFEDA3; */
+    /* --background-color: #DDDADA; */
+    /*  --background-color: #A6DCF0;*/
+    /* --background-color: #F6C0CC; */
+    --background-color: #ECD7C8;
     --text-color: #3C3C3C;
 
-    --primary-shade: #fed42c;
+    --primary-shade: #FED42C;
     --secondary-shade: #EC2554;
     --tertiary-shade: #39A8CD;
     --quaternary-shade: #A4B716;
     --quinary-shade: #676767;
+
+
 }
 
 /* Main styling */

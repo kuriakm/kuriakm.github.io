@@ -1,11 +1,13 @@
 /* Structure */
 :root {
-    --primary-color: #84d9f5;
-    --secondary-color: #0e5acc;
-    --tertiary-color: #2472e7;
-    --background-color: #c9edeb;
-    --box-color: #bdeeff;
-    --box-shadow: #55b1cf;
+    --primary-color: #FFE066;
+    --secondary-color: #F76F8E;
+    --tertiary-color: #89CBE1;
+    --quaternary-color: #C3D350;
+    --quinary-color: #999999;
+    --box-color: #FFFFFF;
+    --background-color: #ECD7C8;
+    --text-color: #3C3C3C;
 }
 
 body {
@@ -14,17 +16,19 @@ body {
 }
 
 #page {
-    background: #ffffff;
-    border: 1.5px solid var(--box-shadow);
-    width: 95%;
-    margin: 0 auto 0 auto;
-    border-radius: 40px 40px 40px 40px;
-    padding: 20px 20px 20px 20px;
+    background: var(--tertiary-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -3.5px 3.5px var(--text-color);
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
+
 iframe {
-    margin: auto;
+    margin: 0 auto;
     display: block;
     text-align: center;
     position: relative;
+    max-width: 100%;
 }
