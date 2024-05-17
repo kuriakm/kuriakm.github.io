@@ -92,6 +92,11 @@ body {
     margin-bottom: 15px;
 }
 
+#store-item-pics #store-items {
+    padding: 5px;
+    padding-top: 10px;
+}
+
 #slideshow,
 #posts {
     position: relative;
