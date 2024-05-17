@@ -54,7 +54,9 @@ body {
 #contact-social,
 #blog-page,
 #blog-post,
-#storepage-items {
+#storepage-items,
+#store-item-page,
+#review-box {
     background: var(--box-color);
     border: 1.5px solid var(--text-color);
     box-shadow: -2.5px 2.5px var(--text-color);
@@ -68,7 +70,8 @@ body {
 #contact-page,
 #contact-social,
 #blog-page,
-#blog-post {
+#blog-post,
+#store-item-page {
     padding: 40px;
     padding-top: 20px;
     max-width: 100%;
@@ -139,9 +142,18 @@ body {
 }
 
 
-#about-writer-box div {
+#about-writer-box div,
+#review-box {
     padding: 20px;
     text-align: center;
+}
+
+#reviews {
+    text-align: left;
+}
+
+#reviews-head {
+    display: inline;
 }
 
 
@@ -343,13 +355,22 @@ textarea {
 
 #slideshow img,
 #about-page img,
-#posts img {
+#posts img,
+#store-item-page img {
     max-width: 100%;
 }
 
 #social-media img {
     margin: 0 auto;
     padding: 20px;
+}
+
+#review-pic {
+    border-radius: 100px;
+    position: relative;
+    max-width: 100%;
+    display: inline;
+    vertical-align: middle;
 }
 
 /* Transferrable Typography */
@@ -368,7 +389,7 @@ h1 {
     text-align: left;
 }
 
-h3 {
+about-writer-box h3 {
     text-align: center;
 }
 
@@ -389,6 +410,17 @@ h3 {
 #store-title h2 {
     margin: 0;
     display: inline-block;
+}
+
+/* Reviews */
+#review-head h4 {
+    display: inline;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+#rating {
+    text-align: right;
 }
 
 /* Media Query */
@@ -466,19 +498,28 @@ h3 {
 
     #storepage #posts {
         height: 550px;
-        overflow: hidden;
+        overflow: scroll;
     }
 
     #posts,
-    #contact-page {
+    #contact-page,
+    #about-page,
+    #store-item-page,
+    #review-box {
         overflow-y: scroll;
     }
 
     #about-page,
     #blog-page #posts,
-    #blog-post #posts {
-        height: 1000px;
+    #blog-post #posts,
+    #store-item-page {
+        height: 980px;
+    }
 
+
+
+    #review-box {
+        height: 1000px;
     }
 
     #social-media {
