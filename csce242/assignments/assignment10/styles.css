@@ -1,0 +1,71 @@
+/* Structure */
+
+:root {
+    --secondary-color: #B4869F;
+    --tertiary-color: #DCD6F7;
+    --bkg-color: #EEC643;
+    --text-color: #473198;
+}
+
+body {
+    background-color: var(--bkg-color);
+}
+
+#content {
+    margin: 10px;
+}
+
+#main-header,
+#main-content {
+    padding: 10px;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
+
+#info {
+    padding: 10px;
+}
+
+#main-footer {}
+
+/* Navigation */
+#main-nav {}
+
+/* Tables */
+
+/* Images */
+#pic-display {
+    text-align: center;
+}
+
+img {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Media Query */
+/* For larger devices e.g. laptops */
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .three {
+        flex: 3;
+    }
+}

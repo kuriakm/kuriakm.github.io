@@ -26,7 +26,7 @@ h2 {}
 p {}
 
 /* Media Query */
-/* For larger devices e.g. labtops */
+/* For larger devices e.g. laptops */
 @media only screen and (min-width: 600px) {
 
     .columns {
