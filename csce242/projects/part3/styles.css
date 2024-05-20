@@ -134,6 +134,8 @@ body {
 
 #blog-page #button-box {
     text-align: right;
+    padding-bottom: 20px;
+
 }
 
 #blog-page button {
@@ -144,10 +146,12 @@ body {
 #store-sort-menu,
 #blog-sort-menu {
     display: inline-flex;
+    text-align: center;
     font-size: small;
     border: 1px solid var(--text-color);
     padding: 10px;
-    margin: 10px;
+    padding-right: 50px;
+    margin-left: 10px;
 }
 
 #posts a,
