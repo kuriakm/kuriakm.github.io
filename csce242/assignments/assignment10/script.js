@@ -13,6 +13,8 @@ const pictures = [
     const picDisplay = document.getElementById("pic-display");
     for (let i = 0; i < pictures.length; i++) {
         const image = document.createElement("img");
+        // Removes image highlighting
+        image.classList.add("noselect");
         image.src = pictures[i][0];
         picDisplay.append(image);
 
