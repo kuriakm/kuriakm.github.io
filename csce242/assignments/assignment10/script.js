@@ -1,11 +1,11 @@
 // Initialize associative array 
 const pictures = [
-    ["images/birthday.jpg", "birthday", "A birthday is a wonderful thing to celebrate!"],
-    ["images/clown.jpg", "clown", "Clowns deserve a lot better."],
-    ["images/rain.jpg", "rain", "Always take an umbrella, you never know when it's going to rain."],
-    ["images/read.jpg", "read", "Reading makes the world a lot more interesting."],
-    ["images/shovel.jpg", "shovel", "You need a shovel to dig up dirt."],
-    ["images/work.jpg", "work", "I work a lot on my laptop."],
+    ["images/birthday.jpg", "Birthday", "A birthday is a wonderful thing to celebrate!"],
+    ["images/clown.jpg", "Clown", "Clowns deserve a lot better."],
+    ["images/rain.jpg", "Rain", "Always take an umbrella, you never know when it's going to rain."],
+    ["images/read.jpg", "Read", "Reading makes the world a lot more interesting."],
+    ["images/shovel.jpg", "Shovel", "You need a shovel to dig up dirt."],
+    ["images/work.jpg", "Work", "I work a lot on my laptop."],
 ];
 
 // Anonymous function that runs at startup

@@ -1,10 +1,10 @@
 /* Structure */
 
 :root {
-    --secondary-color: #B4869F;
-    --tertiary-color: #DCD6F7;
-    --bkg-color: #EEC643;
-    --text-color: #473198;
+    --primary-color: #9B2915;
+    --secondary-color: #E9B44C;
+    --bkg-color: #50A2A7;
+    --text-color: #1C110A;
 }
 
 body {
@@ -16,14 +16,24 @@ body {
 }
 
 #main-header,
-#main-content {
+#main-content,
+#attribute {
     padding: 10px;
-    border: 2px solid var(--secondary-color);
-    background-color: var(--tertiary-color);
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
 }
 
 #info {
     padding: 10px;
+}
+
+#attribute {
+    border-top: 0;
+    text-align: center;
+}
+
+#attribute a {
+    color: var(--primary-color);
 }
 
 #main-footer {}
@@ -42,17 +52,24 @@ img {
     width: 400px;
     height: 300px;
     object-fit: contain;
-    padding: 10px;
+    margin: 10px;
+
 }
 
 /* Typography */
 h1,
-h2,
-h3,
-p {
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+#info h3,
+#info p {
     text-align: center;
     color: var(--text-color);
+    font-weight: 700;
 }
+
 
 /* Media Query */
 /* For larger devices e.g. laptops */
