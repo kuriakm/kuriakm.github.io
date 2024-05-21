@@ -1,0 +1,62 @@
+/* Structure */
+:root {
+    --primary-color:
+
+        --column-color: #0892A5;
+    --text-color: #02182B;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#content {}
+
+#main-content {}
+
+.items section {
+    text-align: center;
+    padding: 10px;
+}
+
+#main-footer {}
+
+/* Navigation */
+
+#main-nav {}
+
+/* Tables */
+
+/* Images */
+img {
+    object-fit: contain;
+    max-width: 100%;
+}
+
+/* Typography */
+
+h1 {}
+
+h2 {}
+
+p {}
+
+/* Media Query */
+/* For larger devices e.g. laptops */
+@media only screen and (min-width: 600px) {
+    .columns {
+        display: flex;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery section {
+        flex: 22%;
+    }
+
+    .one {
+        flex: 1;
+    }
+}

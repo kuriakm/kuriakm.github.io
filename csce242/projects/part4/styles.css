@@ -161,6 +161,10 @@ body {
     text-decoration: none;
 }
 
+#attribute a {
+    color: var(--tertiary-shade);
+}
+
 .bottom-left {
     bottom: 50px;
     left: 50px;
