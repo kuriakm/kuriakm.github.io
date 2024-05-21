@@ -36,7 +36,9 @@ body {
     color: var(--primary-color);
 }
 
-#main-footer {}
+#main-footer {
+    padding: 10px;
+}
 
 /* Navigation */
 #main-nav {}
@@ -68,6 +70,10 @@ h2 {
     text-align: center;
     color: var(--text-color);
     font-weight: 700;
+}
+
+p {
+    text-align: center;
 }
 
 /* Website Specific*/

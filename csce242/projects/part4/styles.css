@@ -1,0 +1,556 @@
+/* Structure */
+:root {
+    --primary-color: #FFE066;
+    --secondary-color: #F76F8E;
+    --tertiary-color: #89CBE1;
+    --quaternary-color: #C3D350;
+    --quinary-color: #999999;
+
+    --primary-shade: #FED42C;
+    --secondary-shade: #EC2554;
+    --tertiary-shade: #39A8CD;
+    --quaternary-shade: #A4B716;
+    --quinary-shade: #676767;
+
+    --box-color: #FFFFFF;
+    --background-color: #ECD7C8;
+    --text-color: #3C3C3C;
+}
+
+/* Main styling */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
+    background: var(--background-color);
+}
+
+#logo {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    padding: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Main Page/Transferrable Designs */
+#information {
+    margin: 0 auto;
+}
+
+#about-writer-box,
+#slideshow,
+#store-items,
+#about-page,
+#contact-page,
+#contact-social,
+#blog-page,
+#blog-post,
+#storepage-items,
+#store-item-page,
+#review-box {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    padding: 5px;
+    margin: 10px;
+    margin-bottom: 15px;
+}
+
+#slideshow,
+#about-page,
+#contact-page,
+#contact-social,
+#blog-page,
+#blog-post,
+#store-item-page {
+    padding: 40px;
+    padding-top: 20px;
+    max-width: 100%;
+}
+
+#store-items {
+    padding: 40px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    margin-top: 15px;
+}
+
+#store-items:last-child {
+    margin-bottom: 15px;
+}
+
+#store-item-pics #store-items {
+    padding: 5px;
+    padding-top: 10px;
+}
+
+#slideshow,
+#posts {
+    position: relative;
+    color: var(--text-color);
+}
+
+/* Blog Page/Transferrable Designs */
+#posts {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+}
+
+#blog-page #posts section {
+    padding: 10px;
+    border: 1px solid var(--text-color);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#blog-page #posts section:first-child {
+    margin-top: 0px;
+}
+
+#blog-page #posts section:last-child {
+    margin-bottom: 0px;
+}
+
+#posts section {
+    margin-bottom: 20px;
+}
+
+
+#button-box {
+    text-align: center;
+    position: relative;
+}
+
+#button-box button {
+    text-align: center;
+    margin: 10px;
+    padding: 10px
+}
+
+#blog-page #button-box {
+    text-align: right;
+    padding-bottom: 20px;
+
+}
+
+#blog-page button {
+    margin-top: 0;
+    padding: 10px;
+}
+
+#store-sort-menu,
+#blog-sort-menu {
+    display: inline-flex;
+    text-align: center;
+    font-size: small;
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    padding-right: 50px;
+    margin-left: 10px;
+}
+
+#posts a,
+#store-items a,
+#slideshow a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.bottom-left {
+    bottom: 50px;
+    left: 50px;
+    font-size: large;
+    font-weight: 500;
+}
+
+#store-featured {
+    margin-top: 20px;
+}
+
+
+#about-writer-box div,
+#review-box {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Store/Store Item */
+#storepage-items {
+    padding: 40px;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: block;
+    margin-top: 15px;
+}
+
+
+#storepage #posts {
+    overflow: auto;
+
+}
+
+#btn-add {
+    margin-top: 10px;
+}
+
+#reviews {
+    text-align: left;
+}
+
+#reviews-head {
+    display: inline;
+}
+
+/* Contact */
+#contact-page {
+    padding-right: 50px;
+}
+
+#contact-page label {
+    display: block;
+    overflow: hidden;
+}
+
+#txt-name,
+#txt-email,
+#txt-com,
+textarea {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+textarea {
+    padding-bottom: 200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
+}
+
+
+#btn-submit {
+    margin-left: 45%;
+}
+
+
+#contact-social {
+    margin-top: 20px;
+}
+
+#social-media {
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Footer */
+#main-footer {
+    padding-top: 15px;
+    text-align: center;
+}
+
+/* Navigation */
+#main-nav ul {
+    padding: 10px;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#main-nav li {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    padding: 5px;
+    margin: 10px;
+}
+
+#main-nav a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--text-color);
+    display: block;
+}
+
+#main-nav a:hover {
+    color: var(--box-color);
+}
+
+#main-nav #home {
+    background: var(--primary-color);
+}
+
+#main-nav #home:hover {
+    background: var(--primary-shade);
+}
+
+#main-nav #about {
+    background: var(--quaternary-color);
+}
+
+#main-nav #about:hover {
+    background: var(--quaternary-shade);
+}
+
+#main-nav #blog {
+    background: var(--tertiary-color);
+}
+
+#main-nav #blog:hover {
+    background: var(--tertiary-shade);
+}
+
+#main-nav #store {
+    background: var(--secondary-color);
+}
+
+#main-nav #store:hover {
+    background: var(--secondary-shade);
+}
+
+#main-nav #contact {
+    background: var(--quinary-color);
+}
+
+#main-nav #contact:hover {
+    background: var(--quinary-shade);
+}
+
+/* Buttons/Interactives */
+/* Toggle menu */
+#toggle-box {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 25px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+#toggle div {
+    width: 25px;
+    height: 2px;
+    background: var(--text-color);
+    margin: 6px 0;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Hide/Show */
+.hide-small {
+    display: none;
+}
+
+/* Slideshow */
+/* Add slideshow code here */
+
+/* Images */
+#store-items img,
+#storepage-items img {
+    position: relative;
+    max-width: 100%;
+}
+
+#about-pic {
+    border-radius: 100px;
+    position: relative;
+    max-width: 100%;
+}
+
+
+#slideshow img,
+#about-page img,
+#posts img,
+#store-item-page img {
+    max-width: 100%;
+}
+
+#social-media img {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#review-pic {
+    border-radius: 100px;
+    position: relative;
+    max-width: 100%;
+    display: inline;
+    vertical-align: middle;
+}
+
+/* Transferrable Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label {
+    color: var(--text-color);
+}
+
+h1 {
+    display: inline;
+    text-align: left;
+}
+
+about-writer-box h3 {
+    text-align: center;
+}
+
+/* Store Typography */
+#storepage-items p {
+    text-align: left;
+}
+
+#store-title {
+    background: var(--box-color);
+    border: 1.5px solid var(--text-color);
+    box-shadow: -2.5px 2.5px var(--text-color);
+    margin: 10px;
+    padding: 40px 40px 20px 40px;
+    max-width: 100%;
+    text-align: center;
+}
+
+#store-title h1 {
+    padding-bottom: 10px;
+    margin: 0;
+    display: inline-block;
+}
+
+/* Reviews */
+#review-head h4 {
+    display: inline;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+#rating {
+    text-align: right;
+}
+
+/* Media Query */
+/* For larger devices e.g. laptops */
+@media only screen and (min-width: 900px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .two {
+        flex: 2;
+    }
+
+    .three {
+        flex: 3
+    }
+
+    .four {
+        flex: 4;
+    }
+
+    #main-nav li {
+        flex: 1;
+    }
+
+    #toggle-box,
+    #toggle {
+        display: none;
+    }
+
+    #information {
+        margin-right: 15px;
+    }
+
+    #store-items,
+    #storepage-items {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #store-items:first-child {
+        margin-left: 10px;
+    }
+
+    #store-items:last-child {
+        margin-right: 10px;
+    }
+
+    #post-text {
+        font-size: large;
+        bottom: 45px;
+        left: 50px;
+        font-size: large;
+        margin-right: 100px;
+    }
+
+    #blog-page #posts,
+    #contact-page {
+        overflow: auto;
+        overflow-y: scroll;
+    }
+
+    #posts {
+        height: 600.5px;
+    }
+
+    #storepage #posts {
+        height: 550px;
+        overflow: scroll;
+    }
+
+    #posts,
+    #contact-page,
+    #about-page,
+    #store-item-page,
+    #review-box {
+        overflow-y: scroll;
+    }
+
+    #about-page,
+    #blog-page #posts,
+    #blog-post #posts,
+    #store-item-page {
+        height: 980px;
+    }
+
+    #review-box {
+        height: 1000px;
+    }
+
+    #social-media {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #btn-submit {
+        margin-left: 50%;
+    }
+
+    .hide-small {
+        display: flex;
+    }
+
+    #slideshow p {
+        padding-right: 5px;
+    }
+}
