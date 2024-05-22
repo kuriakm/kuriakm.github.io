@@ -1,45 +1,103 @@
 /* Structure */
 :root {
-    --primary-color:
-
-        --column-color: #0892A5;
-    --text-color: #02182B;
+    --primary-color: #fee975;
+    --column-color: #28c00d;
+    --border-color: #7d3807;
+    --text-color: #013b00;
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, 'Free Serif', sans-serif;
+    background-color: var(--primary-color);
 }
 
-#content {}
+#column-list {
+    text-align: center;
+}
 
-#main-content {}
-
-.items section {
+#column-list section {
+    background-color: var(--column-color);
+    border: 2px solid var(--border-color);
     text-align: center;
     padding: 10px;
+    padding-bottom: 100px;
+    margin: 10px;
 }
 
-#main-footer {}
+#dialog section {
+    background: white;
+    margin: 10px;
+}
 
-/* Navigation */
+#dialog-details {
+    padding-right: 10px;
+}
 
-#main-nav {}
+#attribute,
+#main-footer {
+    text-align: center;
+}
 
-/* Tables */
+#attribute a {
+    color: var(--column-color);
+    text-decoration: none;
+}
 
 /* Images */
-img {
+#column-list img {
+    border: 2px solid white;
+    text-align: center;
     object-fit: contain;
     max-width: 100%;
 }
 
+#dialog img {
+    margin: 0 auto;
+    max-width: 95%;
+    object-fit: contain;
+    text-align: center;
+}
+
 /* Typography */
+h1,
+h2,
+h3,
+p {
+    color: var(--text-color);
+    font-weight: 500;
+}
 
-h1 {}
+h1,
+h2 {
+    text-align: center;
+    font-weight: 600;
+}
 
-h2 {}
+#attribute a,
+#dialog h2 {
+    font-weight: 600;
+}
 
-p {}
+#dialog h2,
+#dialog p {
+    color: var(--text-color);
+    text-align: left;
+}
+
+.fonts {
+    font-family: Verdana, Geneva, Tahoma, 'Free Serif', sans-serif;
+}
+
+/* Modal */
+.w3-container,
+.w3-panel {
+    padding: 15px;
+}
+
+::before,
+::after {
+    box-sizing: content-box;
+}
 
 /* Media Query */
 /* For larger devices e.g. laptops */
@@ -59,4 +117,14 @@ p {}
     .one {
         flex: 1;
     }
+
+    #dialog img {
+        margin: 0 auto;
+        max-width: 75%;
+        object-fit: contain;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+    }
+
 }

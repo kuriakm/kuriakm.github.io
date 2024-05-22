@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
     <title>Classes</title>
     <!-- 
@@ -13,38 +14,33 @@
 <body>
     <div id="content">
         <header id="main-header">
-            <h1>Assignment 11</h1>
-            <h2>Classes</h2>
+            <h1 class="fonts">Assignment 11</h1>
+            <h2 class="fonts">Classes</h2>
         </header>
+        <main id="main-content" class="columns">
+            <!-- Use column-list to add array columns -->
+            <div id="column-list" class="columns gallery items one">
+            </div>
+        </main>
+        <section id="attribute">
+            Images from <a href="https://www.freepik.com/collection/snakes/2035">
+                Freepik</a>
+        </section>
+        <footer id="main-footer">
+            <p>&copy kuriakm</p>
+        </footer>
     </div>
-    <main id="main-content" class="columns">
-        <div class="columns gallery items">
-            <section>
-                <h3>Boiga Dendrophila</h3>
-                <img src="images/boiga-dendrophila.jpg">
-            </section>
-            <section>
-                <h3>Elegant Bronzeback</h3>
-                <img src="images/elegant-bronzeback.jpg">
-            </section>
-            <section>
-                <h3>European Ratsnake</h3>
-                <img src="images/leopard-snake-european-ratsnake.jpg">
-            </section>
-            <section>
-                <h3>Mangrove Pit Viper</h3>
-                <img src="images/mangrove-pit-viper.jpg">
-            </section>
-        </div>
-    </main>
-    <section id="attribute">
-        Image from <a href="https://www.freepik.com/collection/snakes/2035">
-            Freepik</a>
-    </section>
-    <footer id="main-footer">
-        <p>&copy kuriakm</p>
-    </footer>
 
+    <!-- From W3Schools: Dialog Modal -->
+    <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+                <span id="dialog-x" class="w3-button w3-display-topright">&times;</span>
+                <section id="dialog-content" class="columns">
+                </section>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 
 </body>
