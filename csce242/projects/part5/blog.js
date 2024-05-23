@@ -1,7 +1,7 @@
 //https://kuriakm.github.io/csce242/json/post.json
 const getPosts = async () => {
     try {
-        return (await fetch("https://kuriakm.github.io/json/post.json")).json();
+        return (await fetch("https://kuriakm.github.io/csce242/json/post.json")).json();
     } catch (error) {
         console.log(error);
     }
