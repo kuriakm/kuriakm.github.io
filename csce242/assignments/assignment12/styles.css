@@ -1,0 +1,114 @@
+/* Structure */
+:root {
+    --primary-color: #F0EDEE;
+    --secondary-color:
+        /* #0358b4; */
+        #f550a8;
+    --bkg-color: #ffd5eb;
+    --overlay-color: #90DDF0;
+    --text-color: #0A090C;
+}
+
+body {
+    background-color: var(--bkg-color);
+}
+
+#content {}
+
+#main-content {
+    margin: 20px;
+    text-align: center;
+}
+
+#icecream-list {
+    margin: 0 auto;
+}
+
+/* Overlay */
+.container img {
+    width: 300px;
+    height: 225px;
+    object-fit: contain;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    height: auto;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    transition: 0.5s ease;
+    height: 50px;
+    width: 301px;
+    top: 163px;
+    left: 47px;
+    background-color: var(--overlay-color);
+    opacity: 0;
+}
+
+.container:hover .overlay {
+    opacity: 0.8;
+}
+
+.overlay p {
+    text-align: center;
+}
+
+/* Tables */
+
+/* Images */
+
+/* Typography */
+
+h1 {
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+p {
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+}
+
+/* Media Query */
+/* For larger devices e.g. laptops */
+@media only screen and (min-width: 600px) {
+
+    .columns {
+        display: flex;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+    }
+
+    .one {
+        flex: 1;
+    }
+
+    .three {
+        flex: 3;
+    }
+
+    .container {
+        position: relative;
+        width: 25%;
+        height: auto;
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        transition: 0.5s ease;
+        height: 50px;
+        width: 300px;
+        top: 163px;
+        left: 35px;
+        background-color: var(--overlay-color);
+        opacity: 0;
+    }
+}
