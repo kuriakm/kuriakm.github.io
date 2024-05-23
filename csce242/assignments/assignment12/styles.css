@@ -74,6 +74,11 @@ p {
     position: relative;
 }
 
+#attributes a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 /* Media Query */
 /* For larger devices e.g. laptops */
 @media only screen and (min-width: 600px) {
