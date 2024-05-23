@@ -395,6 +395,11 @@ textarea {
     max-width: 100%;
 }
 
+#blog-page #posts img {
+    width: 1000px;
+    object-fit: fill;
+}
+
 
 #slideshow img,
 #about-page img,

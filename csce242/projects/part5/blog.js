@@ -17,12 +17,12 @@ const showPosts = async () => {
 };
 
 const getBlogPost = (post) => {
-    // Post link
-    const a = document.createElement("a");
-
+    // Link
+    const link = document.createElement("a");
+    link.href = "post.html?seo=" + post.seo;
     // Post section
     const section = document.createElement("section");
-    a.append(section);
+    link.append(section);
 
     // Thumbnail image
     const img = document.createElement("img");
@@ -37,17 +37,16 @@ const getBlogPost = (post) => {
     // Lede
     const p = document.createElement("p");
 
-    for (let preview in post.post_preview) {
-        h4.innerHTML = preview.headline;
-        p.innerHTML = preview.lede;
-        img.src = preview.thumbnail;
+    h4.innerHTML = post.post_preview[0].headline;
+    p.innerHTML = post.post_preview[0].lede;
+    img.src = "images/posts/" + post.post_preview[0].thumbnail;
 
-        section.append(img);
-        section.append(div);
-        div.append(h4);
-        div.append(p);
-    }
-    return a;
+    section.append(img);
+    section.append(div);
+    div.append(h4);
+    div.append(p);
+
+    return link;
 }
 
 window.onload = showPosts();
