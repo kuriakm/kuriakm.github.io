@@ -16,13 +16,14 @@ const showIceCreams = async () => {
     });
 };
 
+const imgUrl = "https://portiaportia.github.io/json/images/ice-creams/";
 const getIceCream = (iceCream) => {
     const section = document.createElement("section");
     section.classList.add("container");
 
     // Image
     const img = document.createElement("img");
-    img.src = "https://portiaportia.github.io/json/images/ice-creams/" + iceCream.image;
+    img.src = imgUrl + iceCream.image;
     section.append(img);
 
     // Overlay
