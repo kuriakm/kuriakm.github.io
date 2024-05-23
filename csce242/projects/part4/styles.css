@@ -375,16 +375,15 @@ textarea {
 /* Images */
 #store-items img,
 #storepage-items img {
+    width: 200px;
+    height: 200px;
     position: relative;
     max-width: 100%;
 }
 
-#storepage-items img {
-    width: 200px;
-    height: 200px;
-}
-
 #about-pic {
+    width: 100px;
+    height: 100px;
     border-radius: 100px;
     position: relative;
     max-width: 100%;
