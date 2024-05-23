@@ -1,4 +1,4 @@
-//https://kuriakm.github.io/json/post.json
+//https://kuriakm.github.io/csce242/json/post.json
 const getPosts = async () => {
     try {
         return (await fetch("https://kuriakm.github.io/json/post.json")).json();
