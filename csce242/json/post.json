@@ -1,7 +1,7 @@
 [{
         "post_preview": [{
             "headline": "<em>Buckshot Roulette</em>: The Devastating Reality of Gambling Addiction",
-            "lead": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction",
+            "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction",
             "thumbnail": "buckshot-thumb.jpg"
         }],
         "date": "May 20th, 2024",
@@ -20,7 +20,7 @@
     {
         "post_preview": [{
             "headline": "<em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very Different Experiences",
-            "lead": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts",
+            "lede": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts",
             "thumbnail": "stardew-harvestmoon-thumb.jpg"
         }],
         "date": "May 22nd, 2024",
@@ -35,7 +35,7 @@
     {
         "post_preview": [{
             "headline": "<em>Portal</em>: Finding Freedom in the Face of Oppression",
-            "lead": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it",
+            "lede": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it",
             "thumbnail": "portal-thumb.jpg"
         }],
         "date": "May 23rd, 2024",
@@ -50,7 +50,7 @@
     {
         "post_preview": [{
             "headline": "<em>Brave Fencer Musashi</em> is an Underrated Action RPG",
-            "lead": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that",
+            "lede": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that",
             "thumbnail": "musashi-thumb.jpg"
         }],
         "date": "May 23rd, 2024",

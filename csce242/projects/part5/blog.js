@@ -11,7 +11,7 @@ const showPosts = async () => {
     const posts = await getPosts();
     const blogPosts = document.getElementById("posts");
 
-    blogPosts.forEach(async (post) => {
+    posts.forEach(async (post) => {
         blogPosts.append(getBlogPost(post));
     });
 };
@@ -37,8 +37,15 @@ const getBlogPost = (post) => {
     // Lede
     const p = document.createElement("p");
 
-    for (let i in post.post_preview) {
-        console.log(i++);
+    for (let preview in post.post_preview) {
+        h4.innerHTML = preview.headline;
+        p.innerHTML = preview.lede;
+        img.src = preview.thumbnail;
+
+        section.append(img);
+        section.append(div);
+        div.append(h4);
+        div.append(p);
     }
     return a;
 }
