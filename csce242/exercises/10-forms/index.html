@@ -1,106 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
 
-  <body>
-    <nav id="main-menu">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Pictures</a></li>
-      </ul>
-    </nav>
-    <div class="parallax home">
-      <h1>Welcome</h1>
+<head>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <nav id="main-menu">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pictures</a></li>
+    </ul>
+  </nav>
+  <div class="parallax home">
+    <h1>Welcome</h1>
+  </div>
+  <section class="info-section columns">
+    <section>
+      <h4>Raccoon Rehabilitation</h4>
+      <p>
+        Please enter your raccoons information, and we can find her/him a
+        home.
+      </p>
+      <form id="form-raccoon">
+        <p>
+          <!-- Text box -->
+          <!-- Required means that you will be unable to submit blank information in the input -->
+          <label for="raccoon-name">Name:</label>
+          <input type="text" id="raccoon-name" name="raccoon-name" required minlength="3" />
+        </p>
+        <p>
+          <!-- Date -->
+          <label for="birth-date">Birthday:</label>
+          <input type="date" id="birth-date" required>
+        </p>
+        <p>
+          <!-- Radio Buttons -->
+          <!-- Required is only needed for one radio input since they are grouped together under "size" -->
+          <input type="radio" name="size" id="small" value="small" required>
+          <label for="small" class="inline">Small</label>
+          <input type="radio" name="size" id="medium" value="medium">
+          <label for="medium" class="inline">Medium</label>
+          <input type="radio" name="size" id="large" value="large">
+          <label for="large" class="inline">Large</label>
+        </p>
+        <p>
+          <!-- Dropdown -->
+          <label for="demeanor">Demeanor</label>
+          <select name="demeanor">
+            <option value="playful">Playful</option>
+            <option value="cuddly">Cuddly</option>
+            <option value="aggressive">Aggressive</option>
+            <option value="violent">Violent</option>
+          </select>
+        </p>
+        <p>
+          <!-- Checkbox -->
+          <input type="checkbox" required name="terms" />
+          <label for="terms" class="inline">I agree to the terms.</label>
+        </p>
+        <p>
+          <button type="submit">Submit</button>
+        </p>
+      </form>
+    </section>
+    <section id="results" class="hidden">
+      <h4>Results</h4>
+      <p>
+        Your raccoons information has been added to the system, soemone will
+        contact you shortly.
+      </p>
+    </section>
+  </section>
+  <section class="parallax face">
+    <h3><a class="down-arrow" href="#">&#8675;</a></h3>
+  </section>
+  <section class="info-section">
+    <h3>Contact Jasper</h3>
+    <div class="columns">
+      <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+        <!-- value goes to personal API key -->
+        <input type="hidden" name="access_key" value="89db3fed-7ffa-437b-a019-5b7be5aa1814" />
+
+        <p>
+          <label for="name">Name:</label>
+          <input id="name" type="text" placeholder="first and last" name="name" required />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input id="email" type="email" name="email" required />
+        </p>
+        <p>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </p>
+        <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+        <input type="hidden" name="subject" value="Contact from Jaspers Website" />
+        <input type="hidden" name="from_name" value="My Website" />
+
+        <p>
+          <button type="submit">Submit Form</button>
+        </p>
+
+        <p id="result"></p>
+      </form>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d826.9462501138008!2d-81.02892516566908!3d33.99805578350104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1716478444615!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
     </div>
-    <section class="info-section columns">
-      <section>
-        <h4>Raccoon Rehabilitation</h4>
-        <p>
-          Please enter your raccoons information, and we can find her/him a
-          home.
-        </p>
-        <form id="form-raccoon">
-          <p>
-            <label for="raccoon-name">Name:</label>
-            <input
-              type="text"
-              id="raccoon-name"
-              name="raccoon-name"
-              required
-              minlength="3"
-            />
-          </p>
-          <p>
-            <button type="submit">Submit</button>
-          </p>
-        </form>
-      </section>
-      <section id="results" class="hidden">
-        <h4>Results</h4>
-        <p>
-          Your raccoons information has been added to the system, soemone will
-          contact you shortly.
-        </p>
-      </section>
-    </section>
-    <section class="parallax face">
-      <h3><a class="down-arrow" href="#">&#8675;</a></h3>
-    </section>
-    <section class="info-section">
-      <h3>Contact Jasper</h3>
-      <div class="columns">
-        <form
-          id="contact-form"
-          action="https://api.web3forms.com/submit"
-          method="POST"
-        >
-          <input type="hidden" name="access_key" value="" />
+  </section>
+  <section class="parallax leash">
+    <h3>Another Title</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6PbKkmxhoCI?si=mZMZ3te37hxaib5t"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </section>
+  <script src="contactme.js"></script>
+  <script src="form.js"></script>
+</body>
 
-          <p>
-            <label for="name">Name:</label>
-            <input
-              id="name"
-              type="text"
-              placeholder="first and last"
-              name="name"
-              required
-            />
-          </p>
-          <p>
-            <label for="email">Email:</label>
-            <input id="email" type="email" name="email" required />
-          </p>
-          <p>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </p>
-          <input
-            type="hidden"
-            name="redirect"
-            value="https://web3forms.com/success"
-          />
-          <input
-            type="hidden"
-            name="subject"
-            value="Contact from Jaspers Website"
-          />
-          <input type="hidden" name="from_name" value="My Website" />
-
-          <p>
-            <button type="submit">Submit Form</button>
-          </p>
-
-          <p id="result"></p>
-        </form>
-      </div>
-    </section>
-    <section class="parallax leash">
-      <h3>Another Title</h3>
-    </section>
-    <script src="contactme.js"></script>
-    <script src="form.js"></script>
-  </body>
 </html>

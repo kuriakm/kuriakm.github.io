@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pixel Renaissance</title>
+    <!-- 
+        Project Part 3: Recreating Wireframe
+        Store Item Page
+        Author: Marshall Kuriakose
+    -->
+</head>
+
+<body>
+    <div id="content">
+        <!-- Header -->
+        <header id="main-header">
+            <div id="logo">
+                <img src="images/logo.png">
+                <h1>Pixel Renaissance</h1>
+            </div>
+            <nav id="main-nav">
+                <section>
+                    <!-- Add shopping bag icon with link to cart page-->
+                    <!-- Add sign-up/login buttons with links to respective pages-->
+                    <div id="toggle-box">
+                        <div id="toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </section>
+                <ul id="nav-ul" class="columns hide-small">
+                    <li id="home"><a href="index.html">Home</a></li>
+                    <li id="about"><a href="about.html">About</a></li>
+                    <li id="blog"><a href="blog.html">Blog</a></li>
+                    <li id="store"><a href="store.html">Store</a></li>
+                    <li id="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Main Content -->
+    <main id="main-content" class="columns">
+        <section id="information" class="three">
+            <!-- Store Item Page box -->
+            <section id="store-item-page">
+                <h2>Pixel Renaissance Stickers</h2>
+                <img src="images/sticker-thumb.jpg">
+
+                <!-- Store Item Preview pictures box -->
+                <!-- Change main store item picture when store-items-pics section clicked -->
+                <section id="store-item-pics" class="columns wrap three">
+                    <section id="store-items" class="one">
+                        <img src="images/sticker1.jpg">
+                    </section>
+                    <section id="store-items" class="one">
+                        <img src="images/sticker2.jpg">
+                    </section>
+                    <section id="store-items" class="one">
+                        <img src="images/sticker3.jpg">
+                    </section>
+                </section>
+                <h3>$5.99</h3>
+                <h4>Logo by Marshall Kuriakose</h4>
+                <p>These cute stickers are great to put on water bottles, laptops, and phone cases! We used vinyl
+                    plastic to create waterproof stickers that can endure repeated use.
+                </p>
+                <p>These sticker packs come with 30 total stickers (10 large, 10 medium, and 10 small sized stickers).
+                </p>
+                <button id="btn-add">Add to Cart</button>
+            </section>
+        </section>
+        <!-- Review box -->
+        <aside id="review-box" class="one">
+            <div>
+                <!-- User reviews boxes -->
+                <div id="reviews">
+                    <div id="review-head">
+                        <img id="review-pic" src="images/face-1.jpg">
+                        <h4>Loren Isles</h4>
+                    </div>
+                    <p> These worked so well with my phone case!
+                    </p>
+                    <p id="rating">4.5/5</p>
+                </div>
+                <div id="reviews">
+                    <div id="review-head">
+                        <img id="review-pic" src="images/face-2.jpg">
+                        <h4>Aubrey Lewis</h4>
+                    </div>
+                    <p> The stickers are so pretty! I wished they would come in smaller sizes though.
+                    </p>
+                    <p id="rating">4.0/5</p>
+                </div>
+                <div id="reviews">
+                    <div id="review-head">
+                        <img id="review-pic" src="images/face-3.jpg">
+                        <h4>Makayla Brown</h4>
+                    </div>
+                    <p> I really liked these stickers, but I think it would be better with more designs rather than just
+                        the logo.
+                    </p>
+                    <p id="rating">4.5/5</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>&copy kuriakm</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

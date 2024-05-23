@@ -1,0 +1,65 @@
+[{
+        "post_preview": [{
+            "headline": "<em>Buckshot Roulette</em>: The Devastating Reality of Gambling Addiction",
+            "lead": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction",
+            "thumbnail": "buckshot-thumb.jpg"
+        }],
+        "date": "May 20th, 2024",
+        "subtitle": "Despite the simplicity of the game, <em>Buckshot Roulette</em> (2024) paints a story about the harrowing reality of gambling addiction and the lengths people will go to satiate their addiction.",
+        "content": ["The protagonist was doomed the moment you started the game.",
+            "From the adrenaline-pumping music to the intensity of the amped-up Russian roulette you play with the dealer, it is easy to miss the tragedy that is taking place here: regardless of whether you \"win\" or \"lose\", the protagonist has already fallen too deep into a gambling addiction they cannot recover from.",
+            "We begin the actual game with the protagonist in a bathroom with loud (but muffled) club music playing outside, the letters \"AFRAID\" written on the mirror, and pill bottles littering the sink area. This is a crucial but often overlooked detail in the game. In other media such as movies and TV shows, club bathrooms are often used as areas where characters can let go and express themselves fully outside of the suffocating environments they were initial in.",
+            "By starting in this area, we can assume that the protagonist has come here to calm themselves down before they go to meet the Dealer. The \"AFRAID\" message could be a representation of the protagonist's subconscious, especially... (to be added)"
+        ],
+        "images": ["buckshot-1.jpg", "buckshot-2.jpg", "buckshot-3.jpg"],
+        "attribute": [{
+            "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/",
+            "credit": "Mike Klubnika"
+        }]
+    },
+    {
+        "post_preview": [{
+            "headline": "<em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very Different Experiences",
+            "lead": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts",
+            "thumbnail": "stardew-harvestmoon-thumb.jpg"
+        }],
+        "date": "May 22nd, 2024",
+        "subtitle": "Despite <em>Harvest Moon</em> (1996) being released 30 years before <em>Stardew Valley</em> (2016), the latter has seen... (to be added)",
+        "content": ["(To be added)"],
+        "images": ["stardew-1.jpg", "harvest-moon-1.jpg"],
+        "attribute": [{
+            "url": "https://www.stardewvalley.net/",
+            "credit": "ConcernedApe"
+        }]
+    },
+    {
+        "post_preview": [{
+            "headline": "<em>Portal</em>: Finding Freedom in the Face of Oppression",
+            "lead": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it",
+            "thumbnail": "portal-thumb.jpg"
+        }],
+        "date": "May 23rd, 2024",
+        "subtitle": "Despite its seemingly straightforward narrative, <em>Portal</em> (2007) has stood the test of time as a complex game with a core message that still impacts us to this day.",
+        "content": ["(To be added)"],
+        "images": ["portal-1.jpg"],
+        "attribute": [{
+            "url": "https://www.valvesoftware.com/en/",
+            "credit": "Valve Corporation"
+        }]
+    },
+    {
+        "post_preview": [{
+            "headline": "<em>Brave Fencer Musashi</em> is an Underrated Action RPG",
+            "lead": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that",
+            "thumbnail": "musashi-thumb.jpg"
+        }],
+        "date": "May 23rd, 2024",
+        "subtitle": "Despite its seemingly straightforward narrative, <em>Portal</em> (2007) has stood the test of time as a complex game with a core message that still impacts us to this day.",
+        "content": ["(To be added)"],
+        "images": ["musashi-1.jpg"],
+        "attribute": [{
+            "url": "https://www.square-enix-games.com/en_US/home",
+            "credit": "Square (now Square-Enix)"
+        }]
+    }
+]
