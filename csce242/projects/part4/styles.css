@@ -373,6 +373,12 @@ textarea {
 /* Add slideshow code here */
 
 /* Images */
+#logo img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
 #store-items img,
 #storepage-items img {
     width: 200px;
@@ -432,6 +438,11 @@ about-writer-box h3 {
     text-align: center;
 }
 
+/* Logo Typograghy */
+#logo h1 {
+    vertical-align: middle;
+}
+
 /* Store Typography */
 #storepage-items p {
     text-align: left;
@@ -457,7 +468,6 @@ about-writer-box h3 {
 #review-head h4 {
     display: inline;
     padding-left: 20px;
-    vertical-align: middle;
 }
 
 #rating {
