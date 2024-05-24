@@ -4,8 +4,10 @@
         "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction.",
         "thumbnail": {
             "name": "buckshot-thumb.jpg",
-            "url": ["https://store.steampowered.com/app/2835570/Buckshot_Roulette/"],
-            "credit": ["Mike Klubnika"]
+            "credit": [{
+                "dev": "Mike Klubnika",
+                "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
+            }]
         },
         "seo": "buckshot-roulette",
         "date": "May 20th, 2024",
@@ -20,15 +22,19 @@
                 "line": "Before the game has officially started, the main menu highlights the premise (and the inevitable temptation) of the game through the buckshots raining down on screen. This design choice creates a underlying agreement between you and the game that the actions you take for the character you are playing as may cost them their life.",
                 "image": {
                     "name": "buckshot-1.jpg",
-                    "url": ["https://store.steampowered.com/app/2835570/Buckshot_Roulette/"],
-                    "credit": ["Mike Klubnika"]
+                    "credit": [{
+                        "dev": "Mike Klubnika",
+                        "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
+                    }]
                 }
             }, {
                 "line": "We begin the actual game with the protagonist in a bathroom with loud (but muffled) club music playing outside, the letters \"AFRAID\" written on the mirror, and pill bottles littering the sink area. This is a crucial but often overlooked detail in the game. In other media such as movies and TV shows, club bathrooms are often used as areas where characters can let go and express themselves fully outside of the suffocating environments they were initial in.",
                 "image": {
                     "name": "buckshot-2.jpg",
-                    "url": ["https://store.steampowered.com/app/2835570/Buckshot_Roulette/"],
-                    "credit": ["Mike Klubnika"]
+                    "credit": [{
+                        "dev": "Mike Klubnika",
+                        "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
+                    }]
                 }
             }, {
                 "line": "By starting in this area, we can assume that the protagonist has come here to calm themselves down before they go to meet the Dealer. The \"AFRAID\" message could be a representation of the protagonist's subconscious, especially... (to be added)",
@@ -38,8 +44,10 @@
                 "line": "To be added",
                 "image": {
                     "name": "buckshot-3.jpg",
-                    "url": ["https://store.steampowered.com/app/2835570/Buckshot_Roulette/"],
-                    "credit": ["Mike Klubnika"]
+                    "credit": [{
+                        "dev": "Mike Klubnika",
+                        "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
+                    }]
                 }
             }
         ],
@@ -53,8 +61,13 @@
         "lede": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts.",
         "thumbnail": {
             "name": "stardew-harvestmoon-thumb.jpg",
-            "url": ["https://www.stardewvalley.net/", "https://www.bokumono.com/"],
-            "credit": ["ConcernedApe", "Marvelous"]
+            "credit": [{
+                "dev": "ConcernedApe",
+                "url": "https://www.stardewvalley.net/"
+            }, {
+                "dev": "Marvelous",
+                "url": "https://www.bokumono.com/"
+            }]
         },
         "seo": "stardew-valley-harvest-moon",
         "date": "May 22nd, 2024",
@@ -66,15 +79,19 @@
             "line": "(To be added)",
             "image": {
                 "name": "stardew-1.jpg",
-                "url": ["https://www.stardewvalley.net/"],
-                "credit": ["ConcernedApe"]
+                "credit": [{
+                    "dev": "ConcernedApe",
+                    "url": "https://www.stardewvalley.net/"
+                }]
             }
         }, {
             "line": "(To be added)",
             "image": {
                 "name": "harvest-moon-1.jpg",
-                "url": ["https://www.bokumono.com/"],
-                "credit": ["Marvelous"]
+                "credit": [{
+                    "dev": "Marvelous",
+                    "url": "https://www.bokumono.com/"
+                }]
             }
         }],
         "tags": [
@@ -87,8 +104,10 @@
         "lede": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it.",
         "thumbnail": {
             "name": "portal-thumb.jpg",
-            "url": ["https://www.valvesoftware.com/en/"],
-            "credit": ["Valve Corporation"]
+            "credit": [{
+                "dev": "Valve Corporation",
+                "url": "https://www.valvesoftware.com/en/"
+            }]
         },
         "seo": "portal",
         "date": "May 23rd, 2024",
@@ -100,8 +119,10 @@
             "line": "(To be added)",
             "image": {
                 "name": "portal-1.jpg",
-                "url": ["https://www.valvesoftware.com/en/"],
-                "credit": ["Valve Corporation"]
+                "credit": [{
+                    "dev": "Valve Corporation",
+                    "url": "https://www.valvesoftware.com/en/"
+                }]
             }
         }],
         "tags": [
@@ -114,8 +135,10 @@
         "lede": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that.",
         "thumbnail": {
             "name": "musashi-thumb.jpg",
-            "url": ["https://www.square-enix-games.com/en_US/home"],
-            "credit": ["Square (now Square-Enix)"]
+            "credit": [{
+                "dev": "Square (now Square-Enix)",
+                "url": "https://www.square-enix-games.com/en_US/home"
+            }]
         },
         "seo": "musashi",
         "date": "May 23rd, 2024",
@@ -127,8 +150,10 @@
             "line": "(To be added)",
             "image": {
                 "name": "musashi-1.jpg",
-                "url": ["https://www.square-enix-games.com/en_US/home"],
-                "credit": ["Square (now Square-Enix)"]
+                "credit": [{
+                    "dev": "Square (now Square-Enix)",
+                    "url": "https://www.square-enix-games.com/en_US/home"
+                }]
             }
         }],
         "tags": [

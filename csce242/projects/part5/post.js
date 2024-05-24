@@ -65,27 +65,45 @@ const showContent = async () => {
                     const img = document.createElement("img");
                     img.src = "images/posts/" + post.content[i].image.name;
                     postSection.append(img);
+                    const attribute = document.createElement("section");
+                    attribute.classList.add("attribute");
+                    attribute.innerHTML = "Image by ";
+                    console.log(Object.keys(post.content[i].image.url).length);
+                    if (Object.keys(post.content[i].image.credit).length <= 1) {
+                        const a = document.createElement("a");
+                        a.innerHTML = post.content[i].image.credit;;
+                        a.href = post.content[i].image.url;;
+                        attribute.append(a);
+                        postSection.append(attribute);
+                    }
+                    /* else {
+                                           for (let j = 0; j < Object.keys(post.content[i].image.url).length; j++) {
+
+                                           }
+                                       }
+                                   } */
                 }
+                // Clear anchor tag inner HTML before text-image for loop
+                /*           attribute.innerHTML = "Image by ";
+                          a.innerHTML = "";
+                          a.href = ""; */
+
+                /*  const firstSentence = document.createElement("p");
+                 firstSentence.innerHTML = post.content[0];
+                 postSection.append(firstSentence);
+                 let length = Object.keys(post.content).length;
+                 for (let i = 0; i < length - 1; i++) {
+                     const p = document.createElement("p");
+                     p.innerHMTL = post.content[i];
+                     postSection.append(p);
+                     a.innerHTML = post.images[i].credit;
+                     a.href = post.images[i].url;
+                     attribute.append(a);
+
+                     postSection.append(attribute);
+                 } */
+
             }
-            // Clear anchor tag inner HTML before text-image for loop
-            /*           attribute.innerHTML = "Image by ";
-                      a.innerHTML = "";
-                      a.href = ""; */
-
-            /*  const firstSentence = document.createElement("p");
-             firstSentence.innerHTML = post.content[0];
-             postSection.append(firstSentence);
-             let length = Object.keys(post.content).length;
-             for (let i = 0; i < length - 1; i++) {
-                 const p = document.createElement("p");
-                 p.innerHMTL = post.content[i];
-                 postSection.append(p);
-                 a.innerHTML = post.images[i].credit;
-                 a.href = post.images[i].url;
-                 attribute.append(a);
-
-                 postSection.append(attribute);
-             } */
             postContent.append(postSection);
         }
     });
