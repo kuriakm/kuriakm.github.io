@@ -59,14 +59,13 @@ const showContent = async () => {
             let length = Object.keys(post.content).length;
             for (let i = 0; i <= length - 1; i++) {
                 const p = document.createElement("p");
-                p.innerHTML = post.content[i];
+                p.innerHTML = post.content[i].line;
                 postSection.append(p);
-
-            }
-            for (let img in post.images) {
-                const imgContent = document.createElement("img");
-                imgContent.src = "images/posts/" + img.name;
-                postSection.append(imgContent);
+                if (post.content[i].image != "{}") {
+                    const img = document.createElement("img");
+                    img.src = "images/posts/" + post.content[i].image.name;
+                    postSection.append(img);
+                }
             }
             // Clear anchor tag inner HTML before text-image for loop
             /*           attribute.innerHTML = "Image by ";
