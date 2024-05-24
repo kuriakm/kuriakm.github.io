@@ -38,7 +38,7 @@ body {
 }
 
 #about-writer-box,
-#slideshow,
+#slideshow-box,
 #store-items,
 #about-page,
 #contact-page,
@@ -56,7 +56,7 @@ body {
     margin-bottom: 15px;
 }
 
-#slideshow,
+#slideshow-box,
 #about-page,
 #contact-page,
 #contact-social,
@@ -100,18 +100,18 @@ body {
     width: 100%;
 }
 
-#blog-page #posts section {
+.post-content {
     padding: 10px;
     border: 1px solid var(--text-color);
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-#blog-page #posts section:first-child {
+.post-content:first-child {
     margin-top: 0px;
 }
 
-#blog-page #posts section:last-child {
+.post-content:last-child {
     margin-bottom: 0px;
 }
 
@@ -153,22 +153,27 @@ body {
     margin-left: 10px;
 }
 
-#posts a,
+.attribute {
+    font-size: smaller;
+}
+
+.attribute a {
+    color: var(--tertiary-shade);
+    text-decoration: none;
+}
+
+
+#blog-page #posts a,
 #store-items a,
+#storepage-items a,
 #slideshow a {
     color: var(--text-color);
     text-decoration: none;
 }
 
-#attribute {
-    font-size: smaller;
-}
 
-#attribute a {
-    color: var(--tertiary-shade);
-}
 
-#contact-social #attribute {
+#contact-social .attribute {
     text-align: center;
 }
 
@@ -365,8 +370,13 @@ textarea {
 }
 
 /* Hide/Show */
-.hide-small {
+.hide-small,
+.hidden {
     display: none;
+}
+
+.display {
+    display: block;
 }
 
 /* Slideshow */
@@ -395,7 +405,8 @@ textarea {
     max-width: 100%;
 }
 
-#blog-page #posts img {
+#blog-page #posts img,
+#blog-post #posts img {
     width: 1000px;
     object-fit: fill;
 }
@@ -479,6 +490,18 @@ about-writer-box h3 {
     text-align: right;
 }
 
+/* Arrows */
+
+#arrow-section {
+    text-align: center;
+}
+
+#forward-arrow,
+#backward-arrow {
+    font-size: xx-large;
+    display: inline;
+}
+
 /* Media Query */
 /* For larger devices e.g. laptops */
 @media only screen and (min-width: 900px) {
@@ -534,7 +557,7 @@ about-writer-box h3 {
         margin-right: 10px;
     }
 
-    #post-text {
+    .post-text {
         font-size: large;
         bottom: 45px;
         left: 50px;

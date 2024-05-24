@@ -45,20 +45,44 @@
     <main id="main-content" class="columns">
         <section id="information" class="three">
             <!-- Featured Posts Slideshow box -->
-            <section id="slideshow">
-                <div class="slides fade">
+            <section id="slideshow-box">
+                <section id="slideshow">
                     <h2>Featured Posts</h2>
                     <!-- Add back when slideshow function is added -->
                     <!-- <div class="num-text">1 / 2</div> -->
-                    <a href="post.html">
-                        <img src="images/buckshot.jpg">
-                        <div class="bottom-left">
-                            <h4>Buckshot Roulette: The Devastating Reality of Gambling Addiction</h4>
-                            <p> How a simple horror game beautifully depicts the journey of falling too
-                                deep into a gambling addiction.</p>
-                        </div>
-                    </a>
-                </div>
+
+                    <section id="featured">
+                        <section>
+                            <img src="images/posts/buckshot-thumb.jpg">
+                            <div class="bottom-left">
+                                <h4>Buckshot Roulette: The Devastating Reality of Gambling Addiction</h4>
+                                <p> How a simple horror game beautifully depicts the journey of falling too
+                                    deep into a gambling addiction.</p>
+                            </div>
+                        </section>
+                        <section class="hidden">
+                            <img src="images/posts/portal-thumb.jpg">
+                            <div class="bottom-left">
+                                <h4><em>Portal</em>: Finding Freedom in the Face of Oppression</h4>
+                                <p> How <em>Portal</em>'s art style and game mechanics captures the struggle between
+                                    humanity and the relentless forces that seek to constrain it.</p>
+                            </div>
+                        </section>
+                        <section class="hidden">
+                            <img src="images/posts/stardew-harvestmoon-thumb.jpg">
+                            <div class="bottom-left">
+                                <h4><em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very
+                                    Different Experiences</h4>
+                                <p> How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared
+                                    to its counterparts.</p>
+                            </div>
+                        </section>
+                    </section>
+                    <section id="arrow-section">
+                        <p id="forward-arrow" class="noselect">&#8678;</p>
+                        <p id="backward-arrow" class="noselect">&#8680;</p>
+                    </section>
+                </section>
             </section>
             <!-- Featured Store Items box -->
             <div id="store-featured" class="columns wrap three">
@@ -93,7 +117,7 @@
                     and the themes/motifs they entail.</p>
                 <p> Marshall lives with his two cats, Makku and Chinnu, and enjoys drawing and coding in his free time.
                 </p>
-                <section id="attribute">
+                <section class="attribute">
                     Image by <a
                         href="https://pixabay.com/users/hans-2/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=324175">Hans</a>
                     from <a
@@ -107,6 +131,7 @@
         <p>&copy kuriakm</p>
     </footer>
     <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>

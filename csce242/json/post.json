@@ -1,7 +1,7 @@
 [{
         "post_preview": [{
             "headline": "<em>Buckshot Roulette</em>: The Devastating Reality of Gambling Addiction",
-            "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction",
+            "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction.",
             "thumbnail": "buckshot-thumb.jpg"
         }],
         "seo": "buckshot-roulette",
@@ -16,54 +16,66 @@
         "attribute": [{
             "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/",
             "credit": "Mike Klubnika"
-        }]
+        }],
+        "tags": [
+            "analysis", "gameplay"
+        ]
     },
     {
         "post_preview": [{
             "headline": "<em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very Different Experiences",
-            "lede": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts",
+            "lede": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts.",
             "thumbnail": "stardew-harvestmoon-thumb.jpg"
         }],
         "seo": "stardew-valley-harvest-moon",
         "date": "May 22nd, 2024",
         "subtitle": "Despite <em>Harvest Moon</em> (1996) being released 30 years before <em>Stardew Valley</em> (2016), the latter has seen... (to be added)",
-        "content": ["(To be added)"],
+        "content": ["(To be added)", "(To be added)"],
         "images": ["stardew-1.jpg", "harvest-moon-1.jpg"],
         "attribute": [{
             "url": "https://www.stardewvalley.net/",
             "credit": "ConcernedApe"
-        }]
+        }],
+        "tags": [
+            "analysis", "art style", "throwback"
+        ]
     },
     {
         "post_preview": [{
             "headline": "<em>Portal</em>: Finding Freedom in the Face of Oppression",
-            "lede": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it",
+            "lede": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it.",
             "thumbnail": "portal-thumb.jpg"
         }],
         "seo": "portal",
         "date": "May 23rd, 2024",
         "subtitle": "Despite its seemingly straightforward narrative, <em>Portal</em> (2007) has stood the test of time as a complex game with a core message that still impacts us to this day.",
-        "content": ["(To be added)"],
+        "content": ["(To be added)", "(To be added)"],
         "images": ["portal-1.jpg"],
         "attribute": [{
             "url": "https://www.valvesoftware.com/en/",
             "credit": "Valve Corporation"
-        }]
+        }],
+        "tags": [
+            "analysis", "art style", "gameplay"
+        ]
     },
     {
         "post_preview": [{
             "headline": "<em>Brave Fencer Musashi</em> is an Underrated Action RPG",
-            "lede": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that",
+            "lede": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that.",
             "thumbnail": "musashi-thumb.jpg"
         }],
         "seo": "musashi",
         "date": "May 23rd, 2024",
         "subtitle": "Despite its seemingly straightforward narrative, <em>Portal</em> (2007) has stood the test of time as a complex game with a core message that still impacts us to this day.",
-        "content": ["(To be added)"],
+        "content": ["(To be added)", "(To be added)"],
         "images": ["musashi-1.jpg"],
         "attribute": [{
             "url": "https://www.square-enix-games.com/en_US/home",
             "credit": "Square (now Square-Enix)"
-        }]
+        }],
+        "tags": [
+            "analysis", "gameplay", "throwback"
+        ]
     }
 ]
