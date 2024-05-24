@@ -44,11 +44,11 @@ const showContent = async () => {
 
             postSection.append(thumbnail);
 
+            // Thumbnail Attribute
             const thumbAttribute = document.createElement("section");
             thumbAttribute.classList.add("attribute");
             thumbAttribute.innerHTML = "Image by ";
 
-            // Thumbnail Attribute
             const thumbA = document.createElement("a");
             thumbA.innerHTML = post.thumbnail.credit;
             thumbA.href = post.thumbnail.url;
@@ -61,7 +61,7 @@ const showContent = async () => {
                 const p = document.createElement("p");
                 p.innerHTML = post.content[i].line;
                 postSection.append(p);
-                if (post.content[i].image != "{}") {
+                if (Object.keys(post.content[i].image) != 0) {
                     const img = document.createElement("img");
                     img.src = "images/posts/" + post.content[i].image.name;
                     postSection.append(img);
