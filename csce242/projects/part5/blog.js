@@ -53,12 +53,3 @@ const getBlogPost = (post) => {
 }
 
 window.onload = showPosts();
-/* blog.html
-<section>
-    <img src="images/buckshot.jpg">
-        <div class="post-text">
-            <h4>Buckshot Roulette: The Devastating Reality of Gambling Addiction</h4>
-            <p>How a simple horror game beautifully depicts the journey of falling too deep into a gambling addiction.</p>
-        </div>
-</section>
-*/
