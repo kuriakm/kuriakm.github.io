@@ -26,7 +26,7 @@ body {
 
 /* Overlay */
 .container img {
-    position: inherit;
+    position: relative;
     width: 300px;
     height: 225px;
     object-fit: contain;
@@ -43,7 +43,7 @@ body {
     position: absolute;
     transition: 0.5s ease;
     height: 50px;
-    width: 301px;
+    width: 300px;
     top: 163px;
     left: 2px;
     background-color: var(--overlay-color);
