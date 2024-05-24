@@ -39,9 +39,9 @@ const getBlogPost = (post) => {
     const p = document.createElement("p");
 
     // Populate post preview content
-    h4.innerHTML = post.post_preview[0].headline;
-    p.innerHTML = post.post_preview[0].lede;
-    img.src = "images/posts/" + post.post_preview[0].thumbnail;
+    h4.innerHTML = post.headline;
+    p.innerHTML = post.lede;
+    img.src = "images/posts/" + post.images[0].name;
 
     // Append items to section and post-text div
     section.append(img);

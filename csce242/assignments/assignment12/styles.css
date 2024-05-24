@@ -13,8 +13,6 @@ body {
     background-color: var(--bkg-color);
 }
 
-#content {}
-
 #main-content {
     margin: 20px;
     text-align: center;

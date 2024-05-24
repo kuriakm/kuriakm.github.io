@@ -18,7 +18,7 @@ const showContent = async () => {
         if (post.seo == seo) {
             const headerSection = document.createElement("section");
             const headline = document.createElement("h2");
-            headline.innerHTML = post.post_preview[0].headline;
+            headline.innerHTML = post.headline;
             const date = document.createElement("h4");
             date.innerHTML = post.date;
             const subtitle = document.createElement("p");
@@ -35,21 +35,26 @@ const showContent = async () => {
 
             const contentSection = document.createElement("section");
             const thumbnail = document.createElement("img");
-            thumbnail.src = "images/posts/" + post.post_preview[0].thumbnail;
+            thumbnail.src = "images/posts/" + post.images[0].name;
 
             const attribute = document.createElement("section");
             attribute.classList.add("attribute");
             const a = document.createElement("a");
-
-            a.innerHTML = post.attribute[0].credit;
-            a.href = post.attribute[0].url;
             attribute.innerHTML = "Image by ";
-            attribute.append(a);
 
-            contentSection.append(thumbnail);
-            contentSection.append(attribute);
-            postSection.append(contentSection);
-            postContent.append(postSection);
+            for (let i in post.images) {
+                a.innerHTML = credit[i];
+                console.log(a.innerHTML);
+            }
+            /*       a.innerHTML = post.attribute[0].credit;
+                  a.href = post.attribute[0].url;
+
+                  attribute.append(a);
+
+                  contentSection.append(thumbnail);
+                  contentSection.append(attribute);
+                  postSection.append(contentSection);
+                  postContent.append(postSection); */
         }
     });
 };
