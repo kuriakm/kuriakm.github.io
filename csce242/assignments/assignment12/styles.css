@@ -35,8 +35,10 @@ body {
 
 .container {
     position: relative;
-    height: auto;
+    width: 300px;
+    height: 225px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .overlay {
@@ -45,7 +47,7 @@ body {
     height: 50px;
     width: 300px;
     top: 163px;
-    left: 2px;
+    text-align: center;
     background-color: var(--overlay-color);
     opacity: 0;
 }
