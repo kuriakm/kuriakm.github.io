@@ -16,11 +16,15 @@ const showContent = async () => {
 
     posts.forEach((post) => {
         if (post.seo == seo) {
+            /* Post header */
             const headerSection = document.createElement("section");
+
             const headline = document.createElement("h2");
             headline.innerHTML = post.headline;
+
             const date = document.createElement("h4");
             date.innerHTML = post.date;
+
             const subtitle = document.createElement("p");
             subtitle.innerHTML = post.subtitle;
 
@@ -30,31 +34,60 @@ const showContent = async () => {
 
             postContent.append(headerSection);
 
+            /* Post content */
             const postSection = document.createElement("section");
             postSection.id = "posts";
 
-            const contentSection = document.createElement("section");
+            /* Thumbnail*/
             const thumbnail = document.createElement("img");
-            thumbnail.src = "images/posts/" + post.images[0].name;
+            thumbnail.src = "images/posts/" + post.thumbnail.name;
 
-            const attribute = document.createElement("section");
-            attribute.classList.add("attribute");
-            const a = document.createElement("a");
-            attribute.innerHTML = "Image by ";
+            postSection.append(thumbnail);
 
-            for (let i in post.images) {
-                a.innerHTML = credit[i];
-                console.log(a.innerHTML);
+            const thumbAttribute = document.createElement("section");
+            thumbAttribute.classList.add("attribute");
+            thumbAttribute.innerHTML = "Image by ";
+
+            // Thumbnail Attribute
+            const thumbA = document.createElement("a");
+            thumbA.innerHTML = post.thumbnail.credit;
+            thumbA.href = post.thumbnail.url;
+            thumbAttribute.append(thumbA);
+            postSection.append(thumbAttribute);
+
+            /*  Iterate through post.content and post.images to populate rest of post */
+            let length = Object.keys(post.content).length;
+            for (let i = 0; i <= length - 1; i++) {
+                const p = document.createElement("p");
+                p.innerHTML = post.content[i];
+                postSection.append(p);
+
             }
-            /*       a.innerHTML = post.attribute[0].credit;
-                  a.href = post.attribute[0].url;
+            for (let img in post.images) {
+                const imgContent = document.createElement("img");
+                imgContent.src = "images/posts/" + img.name;
+                postSection.append(imgContent);
+            }
+            // Clear anchor tag inner HTML before text-image for loop
+            /*           attribute.innerHTML = "Image by ";
+                      a.innerHTML = "";
+                      a.href = ""; */
 
-                  attribute.append(a);
+            /*  const firstSentence = document.createElement("p");
+             firstSentence.innerHTML = post.content[0];
+             postSection.append(firstSentence);
+             let length = Object.keys(post.content).length;
+             for (let i = 0; i < length - 1; i++) {
+                 const p = document.createElement("p");
+                 p.innerHMTL = post.content[i];
+                 postSection.append(p);
+                 a.innerHTML = post.images[i].credit;
+                 a.href = post.images[i].url;
+                 attribute.append(a);
 
-                  contentSection.append(thumbnail);
-                  contentSection.append(attribute);
-                  postSection.append(contentSection);
-                  postContent.append(postSection); */
+                 postSection.append(attribute);
+             } */
+            postContent.append(postSection);
         }
     });
 };
