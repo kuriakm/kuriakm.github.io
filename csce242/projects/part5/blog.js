@@ -41,7 +41,8 @@ const getBlogPost = (post) => {
     // Populate post preview content
     h4.innerHTML = post.headline;
     p.innerHTML = post.lede;
-    img.src = "images/posts/" + post.images[0].name;
+    img.src = "images/posts/" + post.thumbnail.name;
+    console.log(post.thumbnail.name);
 
     // Append items to section and post-text div
     section.append(img);
