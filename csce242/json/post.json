@@ -3,7 +3,7 @@
         "headline": "<em>Buckshot Roulette</em>: The Devastating Reality of Gambling Addiction",
         "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction.",
         "thumbnail": {
-            "name": "buckshot-thumb.jpg",
+            "name": "buckshot/buckshot-thumb.jpg",
             "credit": [{
                 "dev": "Mike Klubnika",
                 "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
@@ -60,7 +60,7 @@
         "headline": "<em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very Different Experiences",
         "lede": "How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared to its counterparts.",
         "thumbnail": {
-            "name": "stardew-harvestmoon-thumb.jpg",
+            "name": "stardew-valley-harvest-moon/stardew-valley-harvest-moon-thumb.jpg",
             "credit": [{
                 "dev": "ConcernedApe",
                 "url": "https://www.stardewvalley.net/"
@@ -103,7 +103,7 @@
         "headline": "<em>Portal</em>: Finding Freedom in the Face of Oppression",
         "lede": "How <em>Portal</em>'s art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it.",
         "thumbnail": {
-            "name": "portal-thumb.jpg",
+            "name": "portal/portal-thumb.jpg",
             "credit": [{
                 "dev": "Valve Corporation",
                 "url": "https://www.valvesoftware.com/en/"
@@ -134,7 +134,38 @@
         "headline": "<em>Brave Fencer Musashi</em> is an Underrated Action RPG",
         "lede": "<em>Brave Fencer Musashi</em> (1998) does not get the recognition it deserves and I am here to fix that.",
         "thumbnail": {
-            "name": "musashi-thumb.jpg",
+            "name": "musashi/musashi-thumb.jpg",
+            "credit": [{
+                "dev": "Square (now Square-Enix)",
+                "url": "https://www.square-enix-games.com/en_US/home"
+            }]
+        },
+        "seo": "musashi",
+        "date": "May 23rd, 2024",
+        "subtitle": "<em>Brave Fencer Musashi</em> (1998) is a fun, campy action RPG and I believe that we should talk about it more.",
+        "content": [{
+            "line": "(To be added)",
+            "image": {}
+        }, {
+            "line": "(To be added)",
+            "image": {
+                "name": "musashi-1.jpg",
+                "credit": [{
+                    "dev": "Square (now Square-Enix)",
+                    "url": "https://www.square-enix-games.com/en_US/home"
+                }]
+            }
+        }],
+        "tags": [
+            "analysis", "gameplay", "throwback"
+        ]
+    },
+    {
+
+        "headline": "<em>Minecraft</em>: How Adding More Features Can Make a Game Less Fun",
+        "lede": "<em>Minecraft</em> (2011) has been inundated with new features to \"improve\" the gaming experience, but why does it not feel like an improvement?",
+        "thumbnail": {
+            "name": "minecraft/minecraft-thumb.jpg",
             "credit": [{
                 "dev": "Square (now Square-Enix)",
                 "url": "https://www.square-enix-games.com/en_US/home"
