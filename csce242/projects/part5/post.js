@@ -1,4 +1,4 @@
-//https://kuriakm.github.io/csce242/json/post.json
+// https://kuriakm.github.io/csce242/json/post.json
 const getPosts = async () => {
     try {
         return (await fetch("https://kuriakm.github.io/csce242/json/post.json")).json();
@@ -11,13 +11,13 @@ const showContent = async () => {
     const posts = await getPosts();
     const postContent = document.getElementById("blog-post");
 
-    /* Pull seo from window url to populate post.html */
+    // Pull seo from window url to populate post.html
     const param = new URLSearchParams(window.location.search);
     const seo = param.get('seo');
 
     posts.forEach((post) => {
         if (post.seo == seo) {
-            /* Post header */
+            // Post header
             const headerSection = document.createElement("section");
 
             const headline = document.createElement("h2");
@@ -35,11 +35,11 @@ const showContent = async () => {
 
             postContent.append(headerSection);
 
-            /* Post content */
+            // Post content
             const postSection = document.createElement("section");
             postSection.id = "posts";
 
-            /* Thumbnail*/
+            // Thumbnail
             const thumbnail = document.createElement("img");
             thumbnail.src = "images/posts/" + post.thumbnail.name;
 
@@ -71,20 +71,22 @@ const showContent = async () => {
 
             postSection.append(thumbAttribute);
 
-            /*  Content */
+            //  Content
             const contentLength = Object.keys(post.content).length;
             for (let i = 0; i <= contentLength - 1; i++) {
-                /* Text */
+
+                // Text
                 const p = document.createElement("p");
                 p.innerHTML = post.content[i].line;
                 postSection.append(p);
-                /* Image */
+
+                // Image
                 if (Object.keys(post.content[i].image).length != 0) {
                     const img = document.createElement("img");
                     img.src = "images/posts/" + post.content[i].image.name;
                     postSection.append(img);
 
-                    /* Attribute */
+                    // Attribute
                     const attribute = document.createElement("section");
                     attribute.classList.add("attribute");
                     attribute.innerHTML = "Image by ";
@@ -112,6 +114,7 @@ const showContent = async () => {
             }
             postContent.append(postSection);
         }
+
     });
 };
 

@@ -165,8 +165,7 @@ body {
 
 #blog-page #posts a,
 #store-items a,
-#storepage-items a,
-#slideshow a {
+#storepage-items a {
     color: var(--text-color);
     text-decoration: none;
 }
@@ -375,6 +374,114 @@ textarea {
 
 /* Slideshow */
 /* Add slideshow code here */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: none;
+}
+
+.back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.forward {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.slideshow-container img {
+    max-width: 50%;
+}
+
+#slideshow a {
+    color: var(--background-color);
+    text-decoration: none;
+}
+
+.back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text {
+    color: var(--box-color);
+    /* background-color: rgba(247, 111, 142, 0.8); */
+    /* background-color: rgba(255, 224, 102, 0.8); */
+    background-color: rgba(57, 168, 205, 0.8);
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    text-align: center;
+}
+
+.text p,
+.text h4 {
+    color: var(--box-color)
+}
+
+.text p {
+    display: none;
+}
+
+.num-text {
+    color: var(--box-color);
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot-box {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--secondary-shade);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.8
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /* Images */
 #logo img {
@@ -483,18 +590,6 @@ about-writer-box h3 {
 
 #rating {
     text-align: right;
-}
-
-/* Arrows */
-
-#arrow-section {
-    text-align: center;
-}
-
-#forward-arrow,
-#backward-arrow {
-    font-size: xx-large;
-    display: inline;
 }
 
 /* Media Query */
@@ -613,7 +708,19 @@ about-writer-box h3 {
         display: flex;
     }
 
-    #slideshow p {
-        padding-right: 5px;
+    .slideshow-container img {
+        width: 1000px;
+        height: 500px;
+    }
+
+    .text {
+        font-size: 18px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .text p {
+        display: contents;
     }
 }

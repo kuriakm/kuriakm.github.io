@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Pixel Renaissance</title>
     <!-- 
-        Project Part 3: Recreating Wireframe
+        Project Part 5: JSON File Parsing
         Home Page
         Author: Marshall Kuriakose
     -->
@@ -48,40 +48,50 @@
             <section id="slideshow-box">
                 <section id="slideshow">
                     <h2>Featured Posts</h2>
-                    <!-- Add back when slideshow function is added -->
-                    <!-- <div class="num-text">1 / 2</div> -->
-
-                    <section id="featured">
-                        <section>
-                            <img src="images/posts/buckshot-thumb.jpg">
-                            <div class="bottom-left">
-                                <h4>Buckshot Roulette: The Devastating Reality of Gambling Addiction</h4>
-                                <p> How a simple horror game beautifully depicts the journey of falling too
-                                    deep into a gambling addiction.</p>
-                            </div>
-                        </section>
-                        <section class="hidden">
-                            <img src="images/posts/portal-thumb.jpg">
-                            <div class="bottom-left">
-                                <h4><em>Portal</em>: Finding Freedom in the Face of Oppression</h4>
-                                <p> How <em>Portal</em>'s art style and game mechanics captures the struggle between
-                                    humanity and the relentless forces that seek to constrain it.</p>
-                            </div>
-                        </section>
-                        <section class="hidden">
-                            <img src="images/posts/stardew-harvestmoon-thumb.jpg">
-                            <div class="bottom-left">
-                                <h4><em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very
-                                    Different Experiences</h4>
-                                <p> How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience compared
-                                    to its counterparts.</p>
-                            </div>
-                        </section>
-                    </section>
-                    <section id="arrow-section">
-                        <p id="forward-arrow" class="noselect">&#8678;</p>
-                        <p id="backward-arrow" class="noselect">&#8680;</p>
-                    </section>
+                    <div class="slideshow-container">
+                        <div class="slides fade">
+                            <div class="num-text">1 / 3</div>
+                            <a href="post.html?seo=buckshot-roulette">
+                                <img src="images/posts/buckshot-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Buckshot Roulette</em>: The Devastating Reality of Gambling
+                                        Addiction</h4>
+                                    <p> How a simple horror game beautifully depicts the journey of falling too
+                                        deep into a gambling addiction.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slides fade">
+                            <div class="num-text">2 / 3</div>
+                            <a href="post.html?seo=stardew-valley-harvest-moon">
+                                <img src="images/posts/stardew-harvestmoon-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very
+                                        Different Experiences</h4>
+                                    <p> How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience
+                                        compared to its counterparts.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slides fade">
+                            <div class="num-text">3 / 3</div>
+                            <a href="post.html?seo=portal">
+                                <img src="images/posts/portal-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Portal</em>: Finding Freedom in the Face of Oppression</h4>
+                                    <p> How <em>Portal</em>'s art style and game mechanics captures the struggle between
+                                        humanity and the relentless forces that seek to constrain it.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="back" onclick="nextSlide(-1)">&#10094;</a>
+                        <a class="forward" onclick="nextSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="dot-box">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
                 </section>
             </section>
             <!-- Featured Store Items box -->
