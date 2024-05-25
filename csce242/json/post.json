@@ -21,7 +21,7 @@
             }, {
                 "line": "Before the game has officially started, the main menu highlights the premise (and the inevitable temptation) of the game through the buckshots raining down on screen. This design choice creates a underlying agreement between you and the game that the actions you take for the character you are playing as may cost them their life.",
                 "image": {
-                    "name": "buckshot-1.jpg",
+                    "name": "buckshot/buckshot-1.jpg",
                     "credit": [{
                         "dev": "Mike Klubnika",
                         "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
@@ -30,7 +30,7 @@
             }, {
                 "line": "We begin the actual game with the protagonist in a bathroom with loud (but muffled) club music playing outside, the letters \"AFRAID\" written on the mirror, and pill bottles littering the sink area. This is a crucial but often overlooked detail in the game. In other media such as movies and TV shows, club bathrooms are often used as areas where characters can let go and express themselves fully outside of the suffocating environments they were initial in.",
                 "image": {
-                    "name": "buckshot-2.jpg",
+                    "name": "buckshot/buckshot-2.jpg",
                     "credit": [{
                         "dev": "Mike Klubnika",
                         "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
@@ -43,7 +43,7 @@
             {
                 "line": "To be added",
                 "image": {
-                    "name": "buckshot-3.jpg",
+                    "name": "buckshot/buckshot-3.jpg",
                     "credit": [{
                         "dev": "Mike Klubnika",
                         "url": "https://store.steampowered.com/app/2835570/Buckshot_Roulette/"
@@ -78,7 +78,7 @@
         }, {
             "line": "(To be added)",
             "image": {
-                "name": "stardew-1.jpg",
+                "name": "stardew-valley-harvest-moon/stardew-1.jpg",
                 "credit": [{
                     "dev": "ConcernedApe",
                     "url": "https://www.stardewvalley.net/"
@@ -87,7 +87,7 @@
         }, {
             "line": "(To be added)",
             "image": {
-                "name": "harvest-moon-1.jpg",
+                "name": "stardew-valley-harvest-moon/harvest-moon-1.jpg",
                 "credit": [{
                     "dev": "Marvelous",
                     "url": "https://www.bokumono.com/"
@@ -118,7 +118,7 @@
         }, {
             "line": "(To be added)",
             "image": {
-                "name": "portal-1.jpg",
+                "name": "portal/portal-1.jpg",
                 "credit": [{
                     "dev": "Valve Corporation",
                     "url": "https://www.valvesoftware.com/en/"
@@ -149,7 +149,7 @@
         }, {
             "line": "(To be added)",
             "image": {
-                "name": "musashi-1.jpg",
+                "name": "musashi/musashi-1.jpg",
                 "credit": [{
                     "dev": "Square (now Square-Enix)",
                     "url": "https://www.square-enix-games.com/en_US/home"
@@ -161,7 +161,6 @@
         ]
     },
     {
-
         "headline": "<em>Minecraft</em>: How Adding More Features Can Make a Game Less Fun",
         "lede": "<em>Minecraft</em> (2011) has been inundated with new features to \"improve\" the gaming experience, but why does it not feel like an improvement?",
         "thumbnail": {
@@ -171,19 +170,49 @@
                 "url": "https://www.square-enix-games.com/en_US/home"
             }]
         },
-        "seo": "musashi",
-        "date": "May 23rd, 2024",
-        "subtitle": "<em>Brave Fencer Musashi</em> (1998) is a fun, campy action RPG and I believe that we should talk about it more.",
+        "seo": "minecraft",
+        "date": "May 24th, 2024",
+        "subtitle": "<em>Minecraft</em> (2011) used to be a lot more fun to play, but why do a lot of players feel like that?",
         "content": [{
             "line": "(To be added)",
             "image": {}
         }, {
             "line": "(To be added)",
             "image": {
-                "name": "musashi-1.jpg",
+                "name": "minecraft/minecraft-mountain.jpg",
                 "credit": [{
-                    "dev": "Square (now Square-Enix)",
-                    "url": "https://www.square-enix-games.com/en_US/home"
+                    "dev": "Mojang",
+                    "url": "https://www.minecraft.net/en-us"
+                }]
+            }
+        }],
+        "tags": [
+            "analysis", "art style", "gameplay"
+        ]
+    },
+    {
+        "headline": "<em>Delicious</em>: Exploring Toxic Mother-Daughter Relationships in a Seemingly Wholesome Game Series",
+        "lede": "For such a wholesome time management game series, <em>Delicious</em> (2006) has an often overlooked toxicity between Emily and her mother Evelyn in the earlier games.",
+        "thumbnail": {
+            "name": "delicious/delicious-thumb.jpg",
+            "credit": [{
+                "dev": "GameHouse",
+                "url": "https://www.gamehouse.com/series/delicious-games-for-windows"
+            }]
+        },
+        "seo": "delicious",
+        "date": "May 24th, 2024",
+        "subtitle": "The dynamic between Emily and her mother is an often painful reality for many toxic mother-daughter relationships.",
+        "content": [{
+            "line": "(To be added)",
+            "image": {}
+        }, {
+            "line": "(To be added)",
+            "image": {
+                "name": "delicious/delicious-1.jpg",
+                "credit": [{
+                    "dev": "GameHouse",
+                    "url": "https://www.gamehouse.com/series/delicious-games-for-windows"
                 }]
             }
         }],
