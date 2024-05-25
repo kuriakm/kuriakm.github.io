@@ -219,5 +219,45 @@
         "tags": [
             "analysis", "gameplay", "throwback"
         ]
+    },
+    {
+        "headline": "<em>NieR: Automata</em>: flower for m[A]chines and What it Means to Be Worthy of Humanity",
+        "lede": "flower for m[A]chines blurs what it means to be worthy of humanity in <em>NieR: Automata</em> (2017).",
+        "thumbnail": {
+            "name": "nier-automata/nier-automata-thumb.jpg",
+            "credit": [{
+                    "dev": "Square Enix",
+                    "url": "https://www.square-enix-games.com/en_US/home"
+                },
+                {
+                    "dev": "PlatinumGames Inc.",
+                    "url": "https://www.platinumgames.com/"
+                }
+            ]
+        },
+        "seo": "nier-automata",
+        "date": "May 25th, 2024",
+        "subtitle": "What does it mean to be worthy of humanity?",
+        "content": [{
+            "line": "(To be added)",
+            "image": {}
+        }, {
+            "line": "(To be added)",
+            "image": {
+                "name": "nier-automata/nier-automata-1.jpg",
+                "credit": [{
+                        "dev": "Square Enix",
+                        "url": "https://www.square-enix-games.com/en_US/home"
+                    },
+                    {
+                        "dev": "PlatinumGames Inc.",
+                        "url": "https://www.platinumgames.com/"
+                    }
+                ]
+            }
+        }],
+        "tags": [
+            "analysis", "gameplay"
+        ]
     }
 ]
