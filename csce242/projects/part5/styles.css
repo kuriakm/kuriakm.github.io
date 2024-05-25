@@ -68,6 +68,7 @@ body {
     max-width: 100%;
 }
 
+
 #store-items {
     padding: 40px;
     max-width: 100%;
@@ -421,8 +422,6 @@ textarea {
 
 .text {
     color: var(--box-color);
-    /* background-color: rgba(247, 111, 142, 0.8); */
-    /* background-color: rgba(255, 224, 102, 0.8); */
     background-color: rgba(57, 168, 205, 0.8);
     position: absolute;
     bottom: 4px;
@@ -457,7 +456,7 @@ textarea {
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: var(--secondary-color);
+    background-color: var(--quinary-color);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -465,7 +464,7 @@ textarea {
 
 .active,
 .dot:hover {
-    background-color: var(--secondary-shade);
+    background-color: var(--quinary-shade);
 }
 
 .fade {
@@ -493,7 +492,6 @@ textarea {
 #store-items img,
 #storepage-items img {
     width: 200px;
-    height: 200px;
     position: relative;
     max-width: 100%;
 }
@@ -519,6 +517,10 @@ textarea {
 #posts img,
 #store-item-page img {
     max-width: 100%;
+}
+
+#store-item-page img {
+    text-align: center;
 }
 
 #social-media img {
@@ -677,12 +679,6 @@ about-writer-box h3 {
     #review-box {
         overflow-y: scroll;
     }
-
-    /*     #blog-page #posts,
-    #blog-post #posts,
-    #store-item-page {
-        height: 980px;
-    } */
 
     #about-page,
     #blog-page #posts,
