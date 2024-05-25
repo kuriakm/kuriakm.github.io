@@ -237,7 +237,7 @@
         },
         "seo": "nier-automata",
         "date": "May 25th, 2024",
-        "subtitle": "What does it mean to be worthy of humanity?",
+        "subtitle": "Perhaps we aren't the superior species after all.",
         "content": [{
             "line": "(To be added)",
             "image": {}
@@ -254,6 +254,36 @@
                         "url": "https://www.platinumgames.com/"
                     }
                 ]
+            }
+        }],
+        "tags": [
+            "analysis", "gameplay"
+        ]
+    },
+    {
+        "headline": "<em>Halo 3</em>: The Perfect End to the Halo Series",
+        "lede": "<em>Halo 3</em> (2007) should have been the end of the Halo series and I will explain why.",
+        "thumbnail": {
+            "name": "halo3/halo3-thumb.jpg",
+            "credit": [{
+                "dev": "Bungie",
+                "url": "https://www.bungie.net/"
+            }]
+        },
+        "seo": "halo3",
+        "date": "May 25th, 2024",
+        "subtitle": "<em>Halo 3</em> (2007) was a beautiful end to Master Chief's and Cortana's journey together and it should have stayed that way.",
+        "content": [{
+            "line": "(To be added)",
+            "image": {}
+        }, {
+            "line": "(To be added)",
+            "image": {
+                "name": "halo3/halo3-1.jpg",
+                "credit": [{
+                    "dev": "Bungie",
+                    "url": "https://www.bungie.net/"
+                }]
             }
         }],
         "tags": [
