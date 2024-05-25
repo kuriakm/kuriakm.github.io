@@ -110,7 +110,6 @@ const getAttribute = (imageCredit) => {
             attribute.append(credit);
         }
     }
-
     return attribute;
 };
 
