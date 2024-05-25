@@ -100,7 +100,7 @@ const showContent = async () => {
                         attribute.append(credit);
                     } else {
                         const credit1 = document.createElement("a");
-                        credit1.innerHTML = post.content[i].image.credit[0].url;
+                        credit1.innerHTML = post.content[i].image.credit[0].dev;
                         credit1.href = post.content[i].image.credit[0].url;
 
                         const credit2 = document.createElement("a");
