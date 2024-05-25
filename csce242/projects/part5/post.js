@@ -46,30 +46,7 @@ const showContent = async () => {
             postSection.append(thumbnail);
 
             // Thumbnail Attribute
-            const thumbAttribute = document.createElement("section");
-            thumbAttribute.classList.add("attribute");
-            thumbAttribute.innerHTML = "Image by ";
-
-            // Credits can only go between 1 and 2 developers/urls
-            const thumbCreditLength = Object.keys(post.thumbnail.credit).length;
-            if (thumbCreditLength == 1) {
-                const thumbCredit = document.createElement("a");
-                thumbCredit.innerHTML = post.thumbnail.credit[0].dev;
-                thumbCredit.href = post.thumbnail.credit[0].url;
-                thumbAttribute.append(thumbCredit);
-            } else {
-                const thumbCredit1 = document.createElement("a");
-                thumbCredit1.innerHTML = post.thumbnail.credit[0].dev;
-                thumbCredit1.href = post.thumbnail.credit[0].url;
-
-                const thumbCredit2 = document.createElement("a");
-                thumbCredit2.innerHTML = " and " + post.thumbnail.credit[1].dev;
-                thumbCredit2.href = post.thumbnail.credit[1].url;
-                thumbAttribute.append(thumbCredit1);
-                thumbAttribute.append(thumbCredit2);
-            }
-
-            postSection.append(thumbAttribute);
+            postSection.append(getAttribute(post.thumbnail.credit));
 
             //  Content
             const contentLength = Object.keys(post.content).length;
@@ -86,36 +63,55 @@ const showContent = async () => {
                     img.src = "images/posts/" + post.content[i].image.name;
                     postSection.append(img);
 
-                    // Attribute
-                    const attribute = document.createElement("section");
-                    attribute.classList.add("attribute");
-                    attribute.innerHTML = "Image by ";
-
-                    // Credits can only go between 1 and 2 developers/urls
-                    const creditLength = Object.keys(post.content[i].image.credit).length;
-                    if (creditLength == 1) {
-                        const credit = document.createElement("a");
-                        credit.innerHTML = post.content[i].image.credit[0].dev;
-                        credit.href = post.content[i].image.credit[0].url;
-                        attribute.append(credit);
-                    } else {
-                        const credit1 = document.createElement("a");
-                        credit1.innerHTML = post.content[i].image.credit[0].dev;
-                        credit1.href = post.content[i].image.credit[0].url;
-
-                        const credit2 = document.createElement("a");
-                        credit2.innerHTML = " and " + post.content[i].image.credit[1].dev;
-                        credit2.href = post.content[i].image.credit[1].url;
-                        attribute.append(credit1);
-                        attribute.append(credit2);
-                    }
-                    postSection.append(attribute);
+                    // Image Attribute
+                    postSection.append(getAttribute(post.content[i].image.credit));
                 }
             }
             postContent.append(postSection);
         }
 
     });
+};
+
+const getAttribute = (imageCredit) => {
+    const attribute = document.createElement("section");
+    attribute.classList.add("attribute");
+    attribute.innerHTML = "Image by ";
+
+    const creditLength = Object.keys(imageCredit).length;
+
+    if (creditLength == 1) {
+        const credit = document.createElement("a");
+        credit.innerHTML = imageCredit[0].dev;
+        credit.href = imageCredit[0].url;
+        attribute.append(credit);
+    } else if (creditLength == 2) {
+        const credit = document.createElement("a");
+        credit.innerHTML = imageCredit[0].dev;
+        credit.href = imageCredit[0].url;
+
+        const credit2 = document.createElement("a");
+        credit2.innerHTML = " and " + imageCredit[1].dev;
+        credit2.href = imageCredit[1].url;
+
+        attribute.append(credit);
+        attribute.append(credit2);
+    } else {
+        for (let i = 0; i < creditLength; i++) {
+            const credit = document.createElement("a");
+            if (i == 0) {
+                credit.innerHMTL = imageCredit[i].dev;
+            } else if (i < creditLength - 1) {
+                credit.innerHMTL = ", " + imageCredit[i].dev;
+            } else {
+                credit.innerHTML = ", and " + imageCredit[i].dev;
+            }
+            credit.href = imageCredit[i].url;
+            attribute.append(credit);
+        }
+    }
+
+    return attribute;
 };
 
 window.onload = showContent();
