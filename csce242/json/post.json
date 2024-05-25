@@ -266,22 +266,9 @@
         "thumbnail": {
             "name": "halo3/halo3-thumb.jpg",
             "credit": [{
-                    "dev": "Bungie",
-                    "url": "https://www.bungie.net/"
-                },
-                {
-                    "dev": "343 Industries",
-                    "url": "https://www.halowaypoint.com/343-industries"
-                },
-                {
-                    "dev": "Ruffian Games",
-                    "url": "https://www.rockstargames.com/"
-                },
-                {
-                    "dev": "ConcernedApe",
-                    "url": "https://www.stardewvalley.net/"
-                }
-            ]
+                "dev": "Bungie",
+                "url": "https://www.bungie.net/"
+            }]
         },
         "seo": "halo3",
         "date": "May 25th, 2024",

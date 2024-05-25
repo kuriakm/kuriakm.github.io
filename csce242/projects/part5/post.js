@@ -81,6 +81,7 @@ const getAttribute = (imageCredit) => {
     const creditLength = Object.keys(imageCredit).length;
 
     console.log(creditLength);
+    // creditLength will be >= 1 since an image has at minimum one attribution
     if (creditLength == 1) {
         const credit = document.createElement("a");
         credit.innerHTML = imageCredit[0].dev;
@@ -98,26 +99,11 @@ const getAttribute = (imageCredit) => {
         attribute.append(credit);
         attribute.append(credit2);
     } else {
-        const credit = document.createElement("a");
-        credit.innerHTML = imageCredit[0].dev;
-        credit.href = imageCredit[0].url;
-
-        const credit2 = document.createElement("a");
-        credit2.innerHTML = ", " + imageCredit[1].dev;
-        credit2.href = imageCredit[1].url;
-
-        attribute.append(credit);
-        attribute.append(credit2);
         for (let i = 0; i < creditLength; i++) {
-            const creditE = document.createElement("a");
-            if (i != creditLength - 1) {
-                creditE.innerHMTL = ", " + imageCredit[i].dev;
-                creditE.href = imageCredit[i].url;
-            } else {
-                creditE.innerHTML = ", and " + imageCredit[i].dev;
-                creditE.href = imageCredit[i].url;
-            }
-            attribute.append(creditE);
+            const credit = document.createElement("a");
+            credit.innerHTML = (i == 0 ? "" : (i > 0 && i != creditLength - 1 ? ", " : ", and ")) + imageCredit[i].dev;
+            credit.href = imageCredit[i].url;
+            attribute.append(credit);
         }
     }
     return attribute;
