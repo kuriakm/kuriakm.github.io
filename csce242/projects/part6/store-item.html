@@ -45,6 +45,7 @@
     <main id="main-content" class="columns">
         <section id="information" class="three">
             <!-- Store Item Page box -->
+            <!-- TODO: Parse Store Item Page box content from JavaScript-->
             <section id="store-item-page">
                 <h2>Pixel Renaissance Stickers</h2>
                 <img id="store-thumb" src="images/sticker-thumb.jpg">
@@ -79,18 +80,18 @@
 
             <!-- Review form -->
             <form id="review-form">
-                <div>
+                <div id="review-part">
                     <label for="txt-name">Name:</label>
                     <input type="text" id="txt-name" placeholder="Enter your name (last name optional)" required
                         minlength="3" />
                 </div>
-                <div>
+                <div id="review-part">
                     <label for="txt-com">Review:</label>
                     <textarea type="text" id="txt-com" placeholder="Enter your review" required
                         minlength="3"></textarea>
                 </div>
-                <div>
-                    <label for="rating">Rating</label>
+                <div id="rating-dropdown">
+                    <label for="rating">Rating: </label>
                     <select name="rating">
                         <option value="1">1</option>
                         <option value="1.5">1.5</option>

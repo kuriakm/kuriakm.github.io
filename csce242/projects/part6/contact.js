@@ -6,8 +6,17 @@ const showEmailResult = async (e) => {
 
     if (response.status == 200) {
         result.innerHTML = "Email successfully sent";
+
+        setTimeout(function () {
+            result.style.display = "none";
+        }, 2000);
+
     } else {
         result.innerHTML = "Sorry, your email was not sent";
+
+        setTimeout(function () {
+            result.style.display = "none";
+        }, 2000);
     }
 
 };
@@ -34,6 +43,11 @@ const getEmailResult = async () => {
     } catch (error) {
         console.log(error);
         result.innerHTML = "Sorry, your email couldn't be sent";
+
+        // Display timeout
+        setTimeout(function () {
+            result.style.display = "none";
+        }, 2000);
     }
 };
 

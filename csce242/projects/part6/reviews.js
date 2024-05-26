@@ -9,7 +9,7 @@ const getProducts = async () => {
 
 const showProduct = async () => {
     const products = await getProducts();
-    /* const productDetails = document.getElementById("information"); */
+    // const productDetails = document.getElementById("information");
 
     const reviews = document.getElementById("review-box");
 
@@ -91,12 +91,28 @@ document.getElementById("review-form").onsubmit = (e) => {
 
         document.getElementById("review-box").append(reviewSection);
         result.innerHTML = "Review successfully submitted.";
+
+        // Display timeout
+        setTimeout(function () {
+            result.style.display = "none";
+        }, 2000);
     } catch (error) {
         console.log(error);
         result.innerHTML = "Sorry, there was an issue submitting your review.";
+
+        // Display timeout
+        setTimeout(function () {
+            result.style.display = "none";
+        }, 2000);
     }
 
 
 }
 
 window.onload = showProduct();
+
+const resetForm = () => {
+    document.getElementById("review-form").reset();
+}
+
+window.onload = resetForm();
