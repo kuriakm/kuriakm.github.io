@@ -1,6 +1,6 @@
 /* Structure */
 :root {
-    --primary-color: #090446;
+    --primary-color: #100a55;
     --secondary-color: #EE4266;
     --tertiary-color: #FFD23F;
     --quaternary-color: #F3FCF0;
@@ -164,6 +164,7 @@ p {
 
 #section-title {
     color: var(--quaternary-color);
+    padding: 12px;
 }
 
 #section-block p {
