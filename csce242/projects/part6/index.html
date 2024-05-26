@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Pixel Renaissance</title>
+    <!-- 
+        Project Part 6: Client Side Form Validation and JavaScript
+        Home Page
+        Author: Marshall Kuriakose
+    -->
+</head>
+
+<body>
+    <div id="content">
+        <!-- Header -->
+        <header id="main-header">
+            <div id="logo">
+                <img src="images/logo.png">
+                <h1>Pixel Renaissance</h1>
+            </div>
+            <nav id="main-nav">
+                <section>
+                    <!-- Add shopping bag icon with link to cart page-->
+                    <!-- Add sign-up/login buttons with links to respective pages-->
+                    <div id="toggle-box">
+                        <div id="toggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </section>
+                <ul id="nav-ul" class="columns hide-small">
+                    <li id="home"><a href="#">Home</a></li>
+                    <li id="about"><a href="about.html">About</a></li>
+                    <li id="blog"><a href="blog.html">Blog</a></li>
+                    <li id="store"><a href="store.html">Store</a></li>
+                    <li id="contact"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Main Content -->
+    <main id="main-content" class="columns">
+        <section id="information" class="three">
+            <!-- Featured Posts Slideshow box -->
+            <section id="slideshow-box">
+                <section id="slideshow">
+                    <h2>Featured Posts</h2>
+                    <div class="slideshow-container">
+                        <div class="slides fade">
+                            <div class="num-text">1 / 3</div>
+                            <a href="post.html?seo=buckshot-roulette">
+                                <img src="images/posts/buckshot/buckshot-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Buckshot Roulette</em>: The Devastating Reality of Gambling
+                                        Addiction</h4>
+                                    <p> How a simple horror game beautifully depicts the journey of falling too
+                                        deep into a gambling addiction.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slides fade">
+                            <div class="num-text">2 / 3</div>
+                            <a href="post.html?seo=stardew-valley-harvest-moon">
+                                <img
+                                    src="images/posts/stardew-valley-harvest-moon/stardew-valley-harvest-moon-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Stardew Valley</em> and <em>Harvest Moon</em>: Two Farming Games, Two Very
+                                        Different Experiences</h4>
+                                    <p> How <em>Stardew Valley</em>'s pixel art creates a unique gaming experience
+                                        compared to its counterparts.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="slides fade">
+                            <div class="num-text">3 / 3</div>
+                            <a href="post.html?seo=portal">
+                                <img src="images/posts/portal/portal-thumb.jpg">
+                                <div class="text">
+                                    <h4><em>Portal</em>: Finding Freedom in the Face of Oppression</h4>
+                                    <p> How <em>Portal</em>'s art style and game mechanics captures the struggle between
+                                        humanity and the relentless forces that seek to constrain it.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <a class="back" onclick="nextSlide(-1)">&#10094;</a>
+                        <a class="forward" onclick="nextSlide(1)">&#10095;</a>
+                    </div>
+                    <div class="dot-box">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </section>
+            </section>
+            <!-- Featured Store Items box -->
+            <div id="store-featured" class="columns wrap three">
+                <section id="store-items" class="one">
+                    <a href="store-item.html">
+                        <img src="images/sticker1.jpg">
+                        <h3>Pixel Renaissance Stickers</h3>
+                    </a>
+                </section>
+                <section id="store-items" class="one">
+                    <img src="images/mug.jpg">
+                    <h3>Pixel Renaissance Mug</h3>
+                </section>
+                <section id="store-items" class="one">
+                    <img src="images/pin.jpg">
+                    <h3>Pixel Renaissance Pin</h3>
+                </section>
+            </div>
+        </section>
+        <!-- About Writer box -->
+        <aside id="about-writer-box" class="one">
+            <div>
+                <img id="about-pic" src="images/about-writer.jpg">
+                <h3>About the Writer</h3>
+                <p> Marshall is currently a rising senior at the University of South Carolina.</p>
+                <p>Marshall began his college career as an Illustration major due to his strong love of art, but chose
+                    to pursue a degree in Computer Information Systems with a concentration in Cybersecurity due to
+                    burnout. However, his interest in art has allowed him a unique perspective on the video games he
+                    plays, creating the foundation of Pixel Renaissance.</p>
+                <p>He has been playing video games since he was a little kid and hasn't stopped since. The first
+                    game he played was Brave Fencer Musashi on the PS1, which cemented his interest in video games
+                    and the themes/motifs they entail.</p>
+                <p> Marshall lives with his two cats, Makku and Chinnu, and enjoys drawing and coding in his free time.
+                </p>
+                <section class="attribute">
+                    Image by <a
+                        href="https://pixabay.com/users/hans-2/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=324175">Hans</a>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=324175">Pixabay</a>
+                </section>
+            </div>
+        </aside>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer">
+        <p>&copy kuriakm</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
