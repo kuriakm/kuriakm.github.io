@@ -232,8 +232,20 @@ iframe {
     border-bottom: 1px solid var(--text-color);
 }
 
+.reviews:last-child {
+    border-bottom: none;
+}
+
 .review-head {
     display: inline;
+}
+
+#review-box textarea {
+    padding-bottom: 100px;
+}
+
+#review-part {
+    text-align: left;
 }
 
 #btn-review {
@@ -244,13 +256,6 @@ iframe {
     padding: 5px;
 }
 
-#review-box textarea {
-    padding-bottom: 100px;
-}
-
-#review-part {
-    text-align: left;
-}
 
 /* Contact */
 #contact-page {
@@ -631,8 +636,9 @@ h1 {
     text-align: right;
 }
 
-#review-form {
-    bottom: 5px;
+#review-form-box {
+    bottom: 10px;
+    border-bottom: 1px solid var(--text-color);
 }
 
 #rating-dropdown {

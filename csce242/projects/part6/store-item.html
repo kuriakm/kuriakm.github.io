@@ -79,37 +79,39 @@
             <!-- User reviews boxes -->
 
             <!-- Review form -->
-            <form id="review-form">
-                <div id="review-part">
-                    <label for="txt-name">Name:</label>
-                    <input type="text" id="txt-name" placeholder="Enter your name (last name optional)" required
-                        minlength="3" />
-                </div>
-                <div id="review-part">
-                    <label for="txt-com">Review:</label>
-                    <textarea type="text" id="txt-com" placeholder="Enter your review" required
-                        minlength="3"></textarea>
-                </div>
-                <div id="rating-dropdown">
-                    <label for="rating">Rating: </label>
-                    <select name="rating">
-                        <option value="1">1</option>
-                        <option value="1.5">1.5</option>
-                        <option value="2">2</option>
-                        <option value="2.5">2.5</option>
-                        <option value="3">3</option>
-                        <option value="3.5">3.5</option>
-                        <option value="4">4</option>
-                        <option value="4.5">4.5</option>
-                        <option value="5">5</option>
-                    </select>
-                </div>
+            <div id="review-form-box">
+                <form id="review-form">
+                    <div id="review-part">
+                        <label for="txt-name">Name:</label>
+                        <input type="text" id="txt-name" placeholder="Enter your name (last name optional)" required
+                            minlength="3" />
+                    </div>
+                    <div id="review-part">
+                        <label for="txt-com">Review:</label>
+                        <textarea type="text" id="txt-com" placeholder="Enter your review" required
+                            minlength="3"></textarea>
+                    </div>
+                    <div id="rating-dropdown">
+                        <label for="rating">Rating: </label>
+                        <select name="rating">
+                            <option value="1">1</option>
+                            <option value="1.5">1.5</option>
+                            <option value="2">2</option>
+                            <option value="2.5">2.5</option>
+                            <option value="3">3</option>
+                            <option value="3.5">3.5</option>
+                            <option value="4">4</option>
+                            <option value="4.5">4.5</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit" id="btn-review">Submit Review</button>
+                    </div>
+                </form>
                 <div>
-                    <button type="submit" id="btn-review">Submit Review</button>
+                    <p id="result"></p>
                 </div>
-            </form>
-            <div>
-                <p id="result"></p>
             </div>
         </aside>
     </main>
