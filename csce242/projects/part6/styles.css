@@ -70,7 +70,7 @@ body {
 
 
 #store-items {
-    padding: 40px;
+    padding: 10px;
     max-width: 100%;
     position: relative;
     text-align: center;
@@ -95,7 +95,8 @@ body {
 }
 
 /* Blog Page/Transferrable Designs */
-#posts {
+#blog-page #posts,
+#blog-post #posts {
     height: auto;
     overflow: auto;
     width: 100%;
@@ -210,7 +211,7 @@ body {
 
 
 #storepage #posts {
-    overflow: auto;
+    overflow: none;
 
 }
 
@@ -497,6 +498,13 @@ textarea {
 #storepage-items img {
     width: 200px;
     position: relative;
+}
+
+#store-item-page img {
+    text-align: center;
+}
+
+#store-thumb {
     max-width: 100%;
 }
 
@@ -517,13 +525,8 @@ textarea {
 
 #slideshow img,
 #about-page img,
-#posts img,
-#store-item-page img {
+#posts img {
     max-width: 100%;
-}
-
-#store-item-page img {
-    text-align: center;
 }
 
 #social-media img {
@@ -646,20 +649,6 @@ about-writer-box h3 {
         margin-right: 15px;
     }
 
-    #store-items,
-    #storepage-items {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    #store-items:first-child {
-        margin-left: 10px;
-    }
-
-    #store-items:last-child {
-        margin-right: 10px;
-    }
-
     .post-text {
         font-size: large;
         bottom: 45px;
@@ -679,14 +668,13 @@ about-writer-box h3 {
     }
 
     #storepage #posts {
-        height: 550px;
-        overflow: scroll;
+        height: 450px;
+        /* overflow: scroll; */
     }
 
-    #posts,
-    #contact-page,
+    #blog-page #posts,
+    #blog-post #posts #contact-page,
     #about-page,
-    #store-item-page,
     #review-box {
         overflow-y: scroll;
     }

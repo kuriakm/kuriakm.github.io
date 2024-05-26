@@ -1,7 +1,22 @@
 [{
-    "product": "stickersr",
-    "reviews": [{},
-        {},
-        {}
-    ]
-}]
+        "product": "stickers",
+        "reviews": [{},
+            {},
+            {}
+        ]
+    },
+    {
+        "product": "mug",
+        "reviews": [{},
+            {},
+            {}
+        ]
+    },
+    {
+        "product": "pin",
+        "reviews": [{},
+            {},
+            {}
+        ]
+    }
+]
