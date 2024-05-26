@@ -237,6 +237,15 @@ iframe {
     display: inline;
 }
 
+#btn-review {
+    margin: 20px;
+}
+
+#review-box textarea {
+    padding-bottom: 100px;
+}
+
+
 /* Contact */
 #contact-page {
     padding-right: 50px;
@@ -260,6 +269,7 @@ textarea {
     padding-bottom: 200px;
     resize: none;
     overflow: hidden;
+    font-size: 14px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', Geneva, Verdana, 'Open Sans', sans-serif;
 }
 
@@ -569,7 +579,7 @@ h1 {
     text-align: left;
 }
 
-about-writer-box h3 {
+#about-writer-box h3 {
     text-align: center;
 }
 
@@ -606,6 +616,10 @@ about-writer-box h3 {
 
 .rating {
     text-align: right;
+}
+
+#review-form {
+    bottom: 5px;
 }
 
 /* Media Query */
@@ -669,7 +683,6 @@ about-writer-box h3 {
 
     #storepage #posts {
         height: 450px;
-        /* overflow: scroll; */
     }
 
     #blog-page #posts,
@@ -677,6 +690,10 @@ about-writer-box h3 {
     #about-page,
     #review-box {
         overflow-y: scroll;
+    }
+
+    #review-box {
+        height: 1020px;
     }
 
     #about-page,
@@ -691,7 +708,11 @@ about-writer-box h3 {
     }
 
     #btn-submit {
-        margin-left: 50%;
+        margin-left: 47%;
+    }
+
+    #btn-review {
+        text-align: center;
     }
 
     .hide-small {
