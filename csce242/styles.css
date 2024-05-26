@@ -145,7 +145,7 @@ body {
     max-width: 100%;
     text-align: center;
     position: relative;
-
+    object-fit: cover;
 }
 
 /* Typography */
