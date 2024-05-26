@@ -409,6 +409,7 @@ textarea {
 .slideshow-container img {
     max-width: 100%;
     min-height: 210px;
+    object-fit: cover;
 }
 
 #slideshow a {
@@ -594,16 +595,17 @@ about-writer-box h3 {
     text-align: right;
 }
 
-@media only screen and (min-width: 592px) {
+/* @media only screen and (min-width: 768px) {
     .slideshow-container img {
         width: 1000px;
-        max-height: 425px;
+        height: 400px;
+        object-fit: cover;
     }
-}
+} */
 
 /* Media Query */
 /* For larger devices e.g. laptops */
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 900px) {
 
     .columns {
         display: flex;
@@ -712,7 +714,9 @@ about-writer-box h3 {
     }
 
     .slideshow-container img {
-        max-height: 500px;
+        width: 1000px;
+        height: 500px;
+        object-fit: cover;
     }
 
     .text {
