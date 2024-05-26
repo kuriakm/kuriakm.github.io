@@ -94,6 +94,14 @@ body {
     color: var(--text-color);
 }
 
+/* About Page Video */
+iframe {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+
 /* Blog Page/Transferrable Designs */
 #blog-page #posts,
 #blog-post #posts {
@@ -412,8 +420,7 @@ textarea {
 }
 
 .slideshow-container img {
-    max-width: 100%;
-    min-height: 210px;
+    height: 430px;
     object-fit: cover;
 }
 
@@ -595,7 +602,6 @@ about-writer-box h3 {
 /* Reviews */
 .review-head h4 {
     display: inline;
-    /* padding-left: 20px; */
 }
 
 .rating {
@@ -604,7 +610,7 @@ about-writer-box h3 {
 
 /* Media Query */
 /* For larger devices e.g. laptops */
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 920px) {
 
     .columns {
         display: flex;
