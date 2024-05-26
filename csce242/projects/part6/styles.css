@@ -219,11 +219,13 @@ body {
     margin-top: 10px;
 }
 
-#reviews {
+.reviews {
     text-align: left;
+    padding: 10px 5px;
+    border-bottom: 1px solid var(--text-color);
 }
 
-#reviews-head {
+.review-head {
     display: inline;
 }
 
@@ -591,22 +593,14 @@ about-writer-box h3 {
 }
 
 /* Reviews */
-#review-head h4 {
+.review-head h4 {
     display: inline;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
-#rating {
+.rating {
     text-align: right;
 }
-
-/* @media only screen and (min-width: 768px) {
-    .slideshow-container img {
-        width: 1000px;
-        height: 400px;
-        object-fit: cover;
-    }
-} */
 
 /* Media Query */
 /* For larger devices e.g. laptops */
@@ -681,13 +675,8 @@ about-writer-box h3 {
 
     #about-page,
     #blog-page #posts,
-    #blog-post #posts,
-    #store-item-page {
+    #blog-post #posts {
         height: 680px;
-    }
-
-    #review-box {
-        height: 700px;
     }
 
     #social-media {

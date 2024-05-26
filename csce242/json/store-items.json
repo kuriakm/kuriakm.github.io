@@ -1,19 +1,43 @@
 [{
-        "product": "stickers",
-        "reviews": [{},
-            {},
-            {}
+        "name": "stickers",
+        "reviews": [{
+                "reviewer": "Loren Isles",
+                "content": "These worked so well with my phone case!",
+                "rating": 4.5
+            },
+            {
+                "reviewer": "Aubrey Lewis",
+                "content": "The stickers are so pretty! I wished they would come in smaller sizes though.",
+                "rating": 4.0
+            },
+            {
+                "reviewer": "Makayla Brown",
+                "content": "I really liked these stickers, but I think it would be better with more designs rather than just the logo. ",
+                "rating": 4.5
+            }
         ]
     },
     {
-        "product": "mug",
-        "reviews": [{},
-            {},
-            {}
+        "name": "mug",
+        "reviews": [{
+                "reviewer": "Katie Dupree",
+                "content": "These worked so well with my phone case! ",
+                "rating": 4.5
+            },
+            {
+                "reviewer": "Aubrey Lewis",
+                "content": "The stickers are so pretty! I wished they would come in smaller sizes though.",
+                "rating": 4.0
+            },
+            {
+                "reviewer": "Makayla Brown",
+                "content": "I really liked these stickers, but I think it would be better with more designs rather than just the logo. ",
+                "rating": 4.5
+            }
         ]
     },
     {
-        "product": "pin",
+        "name": "pin",
         "reviews": [{},
             {},
             {}
