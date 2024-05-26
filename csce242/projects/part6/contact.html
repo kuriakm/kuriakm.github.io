@@ -48,20 +48,38 @@
             <!-- Contact box -->
             <section id="contact-page">
                 <h2>Contact</h2>
-                <div>
-                    <label for="txt-name">Name: </label>
-                    <input type="text" id="txt-name">
-                </div>
-                <div>
-                    <label for="txt-email">Email: </label>
-                    <input type="text" id="txt-email">
-                </div>
-                <div>
-                    <label for="txt-com">Suggestions, Comments, Inquiries: </label>
-                    <textarea for="txt-com"></textarea>
-                </div>
-                <button id="btn-submit">Submit</button>
+
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="89db3fed-7ffa-437b-a019-5b7be5aa1814" />
+                    <div>
+                        <label for="txt-name">Name:</label>
+                        <input id="txt-name" type="text" placeholder="Enter your first and last name" name="Name"
+                            required minlength="5" />
+                    </div>
+                    <div>
+                        <label for="txt-email">Email:</label>
+                        <input id="txt-email" type="email" placeholder="Enter your email address" name="Email"
+                            required />
+                    </div>
+                    <div>
+                        <label for="txt-com">Suggestions, Comments, Inquiries: </label>
+                        <textarea id="txt-com" placeholder="Enter your suggestions, comments, and inquiries"
+                            name="Message" required minlength="5"></textarea>
+                    </div>
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+                    <input type="hidden" name="subject" value="Contact Message From Pixel Renaissance" />
+                    <input type="hidden" name="from_name" value="Reader From Pixel Renaissance" />
+
+                    <div>
+                        <button type="submit" id="btn-submit">Submit</button>
+                    </div>
+
+                    <div>
+                        <p id="result"></p>
+                    </div>
+                </form>
             </section>
+
             <!-- Social Media box -->
             <section id="contact-social">
                 <h2>Social Media</h2>
@@ -101,6 +119,7 @@
         <p>&copy kuriakm</p>
     </footer>
     <script src="script.js"></script>
+    <script src="contact.js"></script>
 </body>
 
 </html>
