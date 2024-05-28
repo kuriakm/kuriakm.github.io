@@ -232,10 +232,6 @@ iframe {
     border-bottom: 1px solid var(--text-color);
 }
 
-.reviews:last-child {
-    border-bottom: none;
-}
-
 .review-head {
     display: inline;
 }
