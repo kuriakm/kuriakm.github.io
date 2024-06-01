@@ -4,7 +4,7 @@
     "headline": "The Devastating Reality of Gambling Addiction",
     "lede": "How a simple horror game beautifully depicts the painful journey of falling too deep into a gambling addiction.",
     "thumbnail": {
-      "name": "buckshot/buckshot-thumb.jpg",
+      "name": "buckshot-thumb.jpg",
       "credit": [
         {
           "dev": "Mike Klubnika",
@@ -28,7 +28,7 @@
       {
         "line": "Before the game has officially started, the main menu highlights the premise (and the inevitable temptation) of the game through the buckshots raining down on screen. This design choice creates a underlying agreement between you and the game that the actions you take for the character you are playing as may cost them their life.",
         "image": {
-          "name": "buckshot/buckshot-1.jpg",
+          "name": "buckshot-1.jpg",
           "credit": [
             {
               "dev": "Mike Klubnika",
@@ -40,7 +40,7 @@
       {
         "line": "We begin the actual game with the protagonist in a bathroom with loud (but muffled) club music playing outside, the letters \"AFRAID\" written on the mirror, and pill bottles littering the sink area. This is a crucial but often overlooked detail in the game. In other media such as movies and TV shows, club bathrooms are often used as areas where characters can let go and express themselves fully outside of the suffocating environments they were initial in.",
         "image": {
-          "name": "buckshot/buckshot-2.jpg",
+          "name": "buckshot-2.jpg",
           "credit": [
             {
               "dev": "Mike Klubnika",
@@ -56,7 +56,7 @@
       {
         "line": "To be added",
         "image": {
-          "name": "buckshot/buckshot-3.jpg",
+          "name": "buckshot-3.jpg",
           "credit": [
             {
               "dev": "Mike Klubnika",
@@ -73,7 +73,7 @@
     "headline": "Two Farming Games, Two Very Different Experiences",
     "lede": "How Stardew Valley's pixel art creates a unique gaming experience compared to its counterparts.",
     "thumbnail": {
-      "name": "stardew-valley-harvest-moon/stardew-valley-harvest-moon-thumb.jpg",
+      "name": "stardew-valley-harvest-moon-thumb.jpg",
       "credit": [
         {
           "dev": "ConcernedApe",
@@ -97,7 +97,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "stardew-valley-harvest-moon/stardew-1.jpg",
+          "name": "stardew-1.jpg",
           "credit": [
             {
               "dev": "ConcernedApe",
@@ -109,7 +109,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "stardew-valley-harvest-moon/harvest-moon-1.jpg",
+          "name": "harvest-moon-1.jpg",
           "credit": [
             {
               "dev": "Marvelous",
@@ -126,7 +126,7 @@
     "headline": "Finding Freedom in the Face of Oppression",
     "lede": "How Portal's art style and game mechanics captures the struggle between humanity and the relentless forces that seek to constrain it.",
     "thumbnail": {
-      "name": "portal/portal-thumb.jpg",
+      "name": "portal-thumb.jpg",
       "credit": [
         {
           "dev": "Valve Corporation",
@@ -146,7 +146,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "portal/portal-1.jpg",
+          "name": "portal-1.jpg",
           "credit": [
             {
               "dev": "Valve Corporation",
@@ -163,7 +163,7 @@
     "headline": "A Game that Does Not Get the Love it Deserves",
     "lede": "Brave Fencer Musashi (1998) does not get the recognition it deserves and I am here to fix that.",
     "thumbnail": {
-      "name": "musashi/musashi-thumb.jpg",
+      "name": "musashi-thumb.jpg",
       "credit": [
         {
           "dev": "Square (now Square-Enix)",
@@ -183,7 +183,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "musashi/musashi-1.jpg",
+          "name": "musashi-1.jpg",
           "credit": [
             {
               "dev": "Square (now Square-Enix)",
@@ -200,7 +200,7 @@
     "headline": "How Adding More Features Can Make a Game Less Fun",
     "lede": "Minecraft (2011) has been inundated with new features to \"improve\" the gaming experience, but why does it not feel like an improvement?",
     "thumbnail": {
-      "name": "minecraft/minecraft-thumb.jpg",
+      "name": "minecraft-thumb.jpg",
       "credit": [
         {
           "dev": "Square (now Square-Enix)",
@@ -220,7 +220,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "minecraft/minecraft-mountain.jpg",
+          "name": "minecraft-mountain.jpg",
           "credit": [
             {
               "dev": "Mojang",
@@ -237,7 +237,7 @@
     "headline": "Exploring Toxic Mother-Daughter Relationships in a Seemingly Wholesome Game Series",
     "lede": "For such a wholesome time management game series, Delicious (2006) has an often overlooked toxicity between Emily and her mother Evelyn in the earlier games.",
     "thumbnail": {
-      "name": "delicious/delicious-thumb.jpg",
+      "name": "delicious-thumb.jpg",
       "credit": [
         {
           "dev": "GameHouse",
@@ -274,7 +274,7 @@
     "headline": "flower for m[A]chines and What it Means to Be Worthy of Humanity",
     "lede": "flower for m[A]chines blurs what it means to be worthy of humanity in NieR: Automata (2017).",
     "thumbnail": {
-      "name": "nier-automata/nier-automata-thumb.jpg",
+      "name": "nier-automata-thumb.jpg",
       "credit": [
         {
           "dev": "Square Enix",
@@ -298,7 +298,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "nier-automata/nier-automata-1.jpg",
+          "name": "nier-automata-1.jpg",
           "credit": [
             {
               "dev": "Square Enix",
@@ -319,7 +319,7 @@
     "headline": "The Perfect End to the Halo Series",
     "lede": "Halo 3 (2007) should have been the end of the Halo series and I will explain why.",
     "thumbnail": {
-      "name": "halo3/halo3-thumb.jpg",
+      "name": "halo3-thumb.jpg",
       "credit": [
         {
           "dev": "Bungie",
@@ -339,7 +339,7 @@
       {
         "line": "(To be added)",
         "image": {
-          "name": "halo3/halo3-1.jpg",
+          "name": "halo3-1.jpg",
           "credit": [
             {
               "dev": "Bungie",
