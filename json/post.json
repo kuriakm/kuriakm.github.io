@@ -20,12 +20,12 @@
       {
         "line": "The protagonist was doomed the moment you started the game.",
         "image": {},
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       },
       {
         "line": "From the adrenaline-pumping music to the intensity of the amped-up Russian roulette you play with the dealer, it is easy to miss the tragedy that is taking place here: regardless of whether you \"win\" or \"lose\", the protagonist has already fallen too deep into a gambling addiction they cannot recover from.",
         "image": {},
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       },
       {
         "line": "Before the game has officially started, the main menu highlights the premise (and the inevitable temptation) of the game through the buckshots raining down on screen. This design choice creates a underlying agreement between you and the game that the actions you take for the character you are playing as may cost them their life.",
@@ -38,7 +38,7 @@
             }
           ]
         },
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       },
       {
         "line": "We begin the actual game with the protagonist in a bathroom with loud (but muffled) club music playing outside, the letters \"AFRAID\" written on the mirror, and pill bottles littering the sink area. This is a crucial but often overlooked detail in the game. In other media such as movies and TV shows, club bathrooms are often used as areas where characters can let go and express themselves fully outside of the suffocating environments they were initial in.",
@@ -51,12 +51,12 @@
             }
           ]
         },
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       },
       {
         "line": "By starting in this area, we can assume that the protagonist has come here to calm themselves down before they go to meet the Dealer. The \"AFRAID\" message could be a representation of the protagonist's subconscious, especially... (to be added)",
         "image": {},
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       },
       {
         "line": "To be added",
@@ -69,7 +69,7 @@
             }
           ]
         },
-        "ref": "buckshot-roulette"
+        "folderpath": "buckshot-roulette"
       }
     ],
     "tags": ["analysis", "gameplay"]
@@ -99,7 +99,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "stardew-valley-harvest-moon"
+        "folderpath": "stardew-valley-harvest-moon"
       },
       {
         "line": "(To be added)",
@@ -112,7 +112,7 @@
             }
           ]
         },
-        "ref": "stardew-valley-harvest-moon"
+        "folderpath": "stardew-valley-harvest-moon"
       },
       {
         "line": "(To be added)",
@@ -125,7 +125,7 @@
             }
           ]
         },
-        "ref": "stardew-valley-harvest-moon"
+        "folderpath": "stardew-valley-harvest-moon"
       }
     ],
     "tags": ["analysis", "art style", "throwback"]
@@ -151,7 +151,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "portal"
+        "folderpath": "portal"
       },
       {
         "line": "(To be added)",
@@ -164,7 +164,7 @@
             }
           ]
         },
-        "ref": "portal"
+        "folderpath": "portal"
       }
     ],
     "tags": ["analysis", "art style", "gameplay"]
@@ -181,7 +181,7 @@
           "url": "https://www.square-enix-games.com/en_US/home"
         }
       ],
-      "alt": "A zoomed-in view of Brave Fencer Musashi's cover art; the protagonist Musashi is at the forefront."
+      "alt": "A zoomed-in view of Brave Fencer Musashi's cover art; the protagonist Musashi is at the fofolderpathront."
     },
     "seo": "musashi",
     "date": "May 23rd, 2024",
@@ -190,7 +190,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "musashi"
+        "folderpath": "musashi"
       },
       {
         "line": "(To be added)",
@@ -203,7 +203,7 @@
             }
           ]
         },
-        "ref": "musashi"
+        "folderpath": "musashi"
       }
     ],
     "tags": ["analysis", "gameplay", "throwback"]
@@ -229,7 +229,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "minecraft"
+        "folderpath": "minecraft"
       },
       {
         "line": "(To be added)",
@@ -242,7 +242,7 @@
             }
           ]
         },
-        "ref": "minecraft"
+        "folderpath": "minecraft"
       }
     ],
     "tags": ["analysis", "art style", "gameplay"]
@@ -268,7 +268,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "delicious"
+        "folderpath": "delicious"
       },
       {
         "line": "(To be added)",
@@ -281,7 +281,7 @@
             }
           ]
         },
-        "ref": "delicious"
+        "folderpath": "delicious"
       }
     ],
     "tags": ["analysis", "gameplay", "throwback"]
@@ -311,7 +311,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "nier-automata"
+        "folderpath": "nier-automata"
       },
       {
         "line": "(To be added)",
@@ -328,7 +328,7 @@
             }
           ]
         },
-        "ref": "nier-automata"
+        "folderpath": "nier-automata"
       }
     ],
     "tags": ["analysis", "gameplay"]
@@ -354,7 +354,7 @@
       {
         "line": "(To be added)",
         "image": {},
-        "ref": "halo3"
+        "folderpath": "halo3"
       },
       {
         "line": "(To be added)",
@@ -367,7 +367,7 @@
             }
           ]
         },
-        "ref": "halo3"
+        "folderpath": "halo3"
       }
     ],
     "tags": ["analysis", "gameplay"]
