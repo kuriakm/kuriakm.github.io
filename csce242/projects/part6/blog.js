@@ -1,7 +1,9 @@
-//https://kuriakm.github.io/json/post.json
+//https://kuriakm.github.io/json/post-html.json
 const getPosts = async () => {
   try {
-    return (await fetch("https://kuriakm.github.io/json/post.json")).json();
+    return (
+      await fetch("https://kuriakm.github.io/json/post-html.json")
+    ).json();
   } catch (error) {
     console.log(error);
   }
